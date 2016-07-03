@@ -19,7 +19,7 @@
 
 ---
 
- ### Spacing
+### Spacing
 
  - `VARS` has 1 Gutter variable to keep EVERYTHING EQUAL
  - Not a single `float:`
