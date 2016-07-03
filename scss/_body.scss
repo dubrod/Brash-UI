@@ -1,0 +1,34 @@
+
+body{
+    font-family: $bodyFont;
+    font-size: 1rem;
+    line-height:1.5rem;
+    background-color: $white;
+    color: $black;
+}
+
+a{
+    color: $primary;
+    &:hover{color: darken($primary,10%);}
+}
+
+main{
+    @extend .container;
+
+    @include headings {padding:0 0 $baseGutter 0;}
+
+    p{
+        margin-bottom: $baseGutter;
+    }
+
+}
+
+article{
+
+    h1{color: $primary;}
+
+    ul{
+        margin:0 $baseGutter*2 $baseGutter $baseGutter*2;
+        list-style: disc;
+    }
+}

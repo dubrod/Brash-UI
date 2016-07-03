@@ -1,0 +1,81 @@
+//Brash Buttons
+@mixin btn{
+  background-image: linear-gradient(to bottom,rgba(223,239,242,.20) 0%,rgba(223,239,242,0) 70%);    //css glass
+  transition-duration: $timing;
+  transition-timing-function: ease;
+  transition-property: background-color;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  line-height: $baseGutter*2;
+  height: auto;
+  min-height: $baseGutter*2;
+  padding: $baseGutter/2 $baseGutter;
+
+}
+
+.btn{
+  @include btn();
+  color: $white;
+  background-color: $primary;
+  &:hover {
+    color: $white;
+    background-color: darken($primary, 10%);
+  }
+}
+
+.btn-small{
+  @include btn();
+  padding: 0 $baseGutter !important;
+  color: $white;
+  background-color: $primary;
+  &:hover {
+    color: $white;
+    background-color: darken($primary, 10%);
+  }
+}
+
+.btn-secondary{
+  @include btn();
+  color: $white;
+  background-color: $secondary;
+  &:hover {
+    color: $white;
+    background-color: darken($secondary, 10%);
+  }
+}
+
+.btn-secondary-small{
+  @include btn();
+  padding: 0 $baseGutter !important;
+  color: $white;
+  background-color: $secondary;
+  &:hover {
+    color: $white;
+    background-color: darken($secondary, 10%);
+  }
+}
+
+.btn-gray{
+  @include btn();
+  color: $black;
+  background-color: $gray;
+  &:hover {
+    color: $black;
+    background-color: darken($gray, 10%);
+  }
+}
+
+.btn-gray-small{
+  @include btn();
+  padding: 0 $baseGutter !important;
+  color: $black;
+  background-color: $gray;
+  &:hover {
+    color: $black;
+    background-color: darken($gray, 10%);
+  }
+}

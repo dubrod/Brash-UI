@@ -1,0 +1,1 @@
+{"version":3,"file":"vars.css","sources":["vars.scss"],"sourcesContent":["//Brash Vars\n\n//Type\n$bodyFont: \"Open Sans, Arial, sans-serif\";\n$headingFont: \"Source Code Pro, Helvetica Neue, Helvetica, sans-serif\";\n"],"mappings":"","names":[],"sourceRoot":"/source/"}

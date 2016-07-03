@@ -1,0 +1,26 @@
+//Brash Utilities
+
+.clearfix {
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
+
+@mixin headings {
+    h1, h2, h3, h4, h5, h6 {
+        @content;
+    }
+}
+
+.m1{margin: $baseGutter !important;}
+.m2{margin: $baseGutter*2 !important;}
+.mt1{margin-top: $baseGutter !important;}
+.mt2{margin-top: $baseGutter*2 !important;}
+.mb1{margin-bottom: $baseGutter !important;}
+.mb2{margin-bottom: $baseGutter*2 !important;}
+
+.p1{padding: $baseGutter !important;}
+.p2{padding: $baseGutter*2 !important;}
+.pt1{padding-top: $baseGutter !important;}
+.pt2{padding-top: $baseGutter*2 !important;}
+.pb1{padding-bottom: $baseGutter !important;}
+.pb2{padding-bottom: $baseGutter*2 !important;}

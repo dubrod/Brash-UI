@@ -1,0 +1,92 @@
+[role=banner]{
+    width:100%;
+    background-color: $headerColor;
+
+    section{
+        display:flex;
+        flex-direction: row;
+
+        @include respond-to($oldmobile){
+            flex-direction: column;
+        }
+    }
+
+    #logo{
+        padding: $baseGutter 0;
+        flex-basis: 50%;
+        svg{fill: $black;}
+        label{vertical-align:middle;}
+
+        @include respond-to($oldmobile){
+            flex-basis: 100%;
+            text-align:center;
+        }
+    }
+
+    [role=search]{
+        display:flex;
+        justify-content: flex-end;
+        flex-basis: 50%;
+        padding: $baseGutter 0;
+
+
+        @include respond-to($oldmobile){
+            flex-basis: 100%;
+            justify-content:center;
+        }
+    }
+
+}
+
+[role=navigation]{
+    @extend .container;
+    background-color: darken($headerColor,2%);
+
+    ul{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        li{
+            flex: 1 1 0;
+            a{
+                display:block;
+                color:$black;
+                text-decoration: none;
+                padding: $baseGutter;
+                text-align:center;
+
+                &:hover{
+                    background-color: darken($headerColor,4%);
+                    color:$white;
+                }
+            }
+        }
+
+        @include respond-to($mobile){
+            flex-flow: column nowrap;
+        }
+    }
+}
+
+[role=complementary]{
+    background-color: $light-gray;
+    @include headings {color:$secondary;}
+
+    ul{
+
+        li{
+            padding: 0 0 $baseGutter 0;
+        }
+    }
+
+}
+
+[role=contentinfo]{
+    width: 100%;
+    background-color: $gray;
+    color: $black;
+    font-size: .9rem;
+    p{
+        padding: $baseGutter 0;
+    }
+}

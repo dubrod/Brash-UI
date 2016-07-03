@@ -1,0 +1,265 @@
+// Forms
+$label-width: 10rem !default;
+$input-width: 20rem !default;
+$input-height: 2rem !default;
+$input-bg: darken($white,1%);
+
+[role=search]{
+    input[type="text"]{
+        text-indent: $baseGutter/2;
+        background-color: $white;
+        height:30px;
+        vertical-align:middle;
+    }
+    button{
+        background-color: darken($headerColor,4%);
+        height:30px;
+        width:30px;
+        vertical-align:middle;
+        svg{
+            fill:$white;
+            height:20px;
+            width:20px;
+            vertical-align:top;
+        }
+
+        &:hover{
+            background-color: darken($headerColor,6%);
+        }
+    }
+}
+
+fieldset{margin: 0; padding: 0; border: none;}
+input.error,textarea.error{border:1px solid $red !important;}
+.valid{border:1px solid $green !important;}
+.errorBox{
+    border:1px solid $red !important;
+    color:$red;
+    padding:$baseGutter/2 $baseGutter;
+    margin:$baseGutter/2;
+    background-color: rgba($red,.2);
+}
+
+form{
+      margin-bottom: $baseGutter;
+      padding:$baseGutter 0;
+      label{
+          min-width: $label-width;
+          vertical-align:top;
+          display: inline-block;
+          font-weight:bold;
+
+          &.inline{
+              min-width:$baseGutter;
+              display: inline-block;
+              padding-right:$baseGutter;
+              vertical-align:middle;
+          }
+          small{display:block;}
+
+          @include respond-to($mobile){
+              min-width:100%;
+              display:block !important;
+              margin-bottom: $baseGutter/2;
+          }
+      }
+      .errorBox{
+          margin-left:$label-width;
+      }
+      .input-wrapper{
+          margin-bottom: $baseGutter;
+      }
+}
+
+input[type="text"]:not(#search),input[type="tel"],input[type="email"],input[type="password"],input[type="number"] {
+  appearance: none;
+  max-width: 100%;
+  width: $input-width;
+  height: $input-height;
+  line-height: $baseGutter;
+  text-indent: $baseGutter/2;
+  color: $black;
+
+  @include respond-to($mobile){
+    min-width:100%;
+    display:block;
+  }
+}
+
+select {
+  width: $input-width;
+  height: $input-height;
+
+  @include respond-to($mobile){
+    min-width:100%;
+    display:block;
+  }
+}
+
+textarea {
+  width: $input-width;
+  height:$input-height*3.5;
+  padding: $baseGutter/2;
+  color: $black;
+  border-style: solid;
+  line-height: $baseGutter*1.5;
+
+
+  @include respond-to($mobile){
+    width:100%;
+    display:block;
+  }
+}
+
+
+//input color
+input[type="text"]:not(#search),input[type="tel"],input[type="email"],input[type="password"],input[type="number"],
+textarea,
+select {
+transition: box-shadow $timing ease;
+color: $black;
+border:none;
+border:1px solid $gray;
+background-color: $input-bg;
+    &:focus {
+      outline: none;
+      border-color: $primary;
+      background-color: darken($input-bg, 1%);
+      box-shadow: 0 0 .125rem rgba($black,.7);
+    }
+}
+
+input[type="range"]{
+    width:$input-width;
+    height:$input-height/2;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    background-color: $input-bg;
+    outline:none;
+    vertical-align:middle;
+
+    @include respond-to($mobile){
+        width:calc(100% - 90px);
+    }
+
+    // Range Handle
+    &::-webkit-slider-thumb {
+        appearance: none;
+        -webkit-appearance:none;
+        width: 20px;
+        height: 30px;
+        background: $primary;
+        cursor: pointer;
+        border:0;
+        border-radius:$radius;
+
+        &:hover {
+          background: $secondary;
+        }
+    }
+    &::-moz-range-thumb {
+        appearance: none;
+        -moz-appearance:none;
+        width: 20px;
+        height: 30px;
+        background: $primary;
+        cursor: pointer;
+        border:0;
+        border-radius:.5rem;
+
+        &:hover {
+          background: $secondary;
+        }
+    }
+
+    &:active::-webkit-slider-thumb {
+        background: $secondary;
+    }
+
+}
+
+// Range Label
+.range-value {
+  display: inline-block;
+  position: relative;
+  width: 5rem;
+  font-size:.9rem;
+  color: $white;
+  line-height: 1.25rem;
+  text-align: center;
+  border-radius: $radius;
+  background: $secondary;
+  padding: 5px 10px;
+  margin-left: 8px;
+
+  &:after {
+    position: absolute;
+    top: 8px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid $secondary;
+    border-bottom: 7px solid transparent;
+    content: '';
+  }
+}
+
+//stacked
+
+.form-stacked {
+  label{
+      padding: $baseGutter/4;
+      display: block;
+      width: 100%;
+      small{display:inline-block; padding-left:$baseGutter;}
+  }
+  input[type="text"]:not(#search),input[type="tel"],input[type="email"],input[type="password"],input[type="number"],
+  select,
+  textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: $baseGutter;
+  }
+  input[type="range"]{width:calc(100% - 90px);} //leave room for the value
+  .errorBox{
+    margin-left:0;
+  }
+}
+
+//Inline Form
+.form-inline{
+    input[type="text"]:not(#search),input[type="tel"],input[type="email"],input[type="password"],input[type="number"]{
+        width:$input-width/1.5;
+    }
+    .input-wrapper{
+        display:inline;
+        position:relative;
+    }
+    .errorBox{
+        position: absolute;
+        margin:0;
+        left:0;
+        width:$input-width/1.5;
+        font-size:.8rem;
+        line-height:1rem;
+        padding:.5rem .5rem .5rem 1.5rem;
+    }
+
+    @include respond-to($mobile){
+        input[type="text"],input[type="tel"],input[type="email"],input[type="password"],input[type="number"]{width:100%;}
+        .input-wrapper{display:block;}
+        .errorBox{position:relative;width:100%;margin: .5rem 0;}
+    }
+}
+
+//HACKS
+//get radios and checkboxes to match on all browsers
+input[type="radio"], input[type="radio"] + span ,input[type="checkbox"],input[type="checkbox"] + span{vertical-align: middle; margin-right: 1rem; font-weight:normal;}
+//color when checked
+input[type="radio"]:checked,input[type="checkbox"]:checked{border: 1px solid $primary;}
+input[type="radio"]:checked + span,input[type="checkbox"]:checked + span{color:$primary;}
+
+::-moz-range-track {background: $input-bg; border: 0;}
+input::-moz-focus-inner,input::-moz-focus-outer { border: 0; }

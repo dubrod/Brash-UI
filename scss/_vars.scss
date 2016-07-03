@@ -1,0 +1,32 @@
+//Brash Vars
+
+$radius: .5rem;
+
+//Type
+$bodyFont: "Open Sans", Arial, sans-serif;
+$headingFont: "Roboto", Helvetica Neue, Helvetica, sans-serif;
+
+//Colors
+$white: #FFFFFF;
+$black: #333333;
+$red: #b02431;
+$green: #A7D406;
+$gray: #EAEAEA;
+$dark-gray: lighten($black,15%);
+$light-gray: lighten($gray,5%);
+$pink: #FF337A;
+$blue: #00B7D1;
+$nude: #DEDCD3;
+
+$primary: $blue;
+$secondary: $pink;
+$headerColor: $primary;
+
+//Spacing
+$baseGutter: 1rem;
+
+//transition timing
+$timing: .3s;
+
+//Debug
+.debug{border: 1px solid $secondary;}

@@ -1,0 +1,17 @@
+//Brash Type Scale
+
+@include headings {
+    font-family: $headingFont; font-weight:400;
+    small{
+        display:block;
+        color: darken($gray,20%);
+    }
+}
+
+h1, .h1{ font-size:2rem; line-height:2rem; }
+h2, .h2{ font-size:1.8rem; line-height:1.8rem; }
+h3, .h3{ font-size:1.6rem; line-height:1.6rem; }
+h4, .h4{ font-size:1.4rem; line-height:1.4rem; }
+
+strong, .bold{font-weight:600;}
+small, .small{font-size: .9rem;}
