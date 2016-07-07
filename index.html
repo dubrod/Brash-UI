@@ -714,19 +714,24 @@
     <h2>Tabs</h2>
 </section>
 
-<section class="container tabs" tabindex="0">
-    <ul>
-        <li><a href="" class="active">Tab 1</a></li>
-        <li><a href="">Tabular 2</a></li>
-        <li><a href="">Tab 3</a></li>
-    </ul>
-    <section class="tab active" id="tab1">
+<section class="container" tabindex="0">
+    <div role="tablist">
+        <button role="tab" id="tab-btn-1" aria-selected="true" aria-controls="tab1">Tab 1</button>
+        <button role="tab" id="tab-btn-2" aria-selected="false" aria-controls="tab2">Tabular 2</button>
+        <button role="tab" id="tab-btn-3" aria-selected="false" aria-controls="tab3">Tab 3</button>
+    </div>
+    <section role="tabpanel" class="active" id="tab1" aria-labelledby="tab-btn-1">
         <h2>Product</h2>
         <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
         <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
     </section>
-    <section class="tab" id="tab2">
+    <section role="tabpanel" id="tab2" aria-labelledby="tab-btn-2">
         <h2>Platform</h2>
+        <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
+        <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
+    </section>
+    <section role="tabpanel" id="tab3" aria-labelledby="tab-btn-3">
+        <h2>CMS</h2>
         <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
         <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
     </section>

@@ -1,46 +1,44 @@
 //Brash Tabs
 
-.tabs{
+
+[role=tablist]{
     margin-top: $baseGutter;
-    > ul{
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: stretch;
-        li{
-            flex: 1 1 0;
-            a{
-                display:block;
-                color:$black;
-                text-decoration: none;
-                padding: $baseGutter;
-                text-align:center;
-                background-color: $light-gray;
-                border-top:1px solid $gray;
-                border-left:1px solid $gray;
-                border-right:1px solid $gray;
+    display: flex;
+    flex-basis:100%;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    button{
+        flex: 1 1 0;
+        color:$black;
+        text-decoration: none;
+        padding: $baseGutter;
+        text-align:center;
+        background-color: $light-gray;
+        border-top:1px solid $gray;
+        border-left:1px solid $gray;
+        border-right:1px solid $gray;
 
-                &:hover{
-                    background-color: $gray;
-                    border-top:1px solid $gray;
-                    border-left:1px solid $gray;
-                    border-right:1px solid $gray;
-                }
+        &:hover{
+            background-color: $gray;
+            border-top:1px solid $gray;
+            border-left:1px solid $gray;
+            border-right:1px solid $gray;
+        }
 
-                &.active{
-                    background-color: $primary;
-                    border-top:1px solid $primary;
-                    border-left:1px solid $primary;
-                    border-right:1px solid $primary;
-                    color:$white;
-                }
-            }
+        &[aria-selected="true"]{
+            background-color: $primary;
+            border-top:1px solid $primary;
+            border-left:1px solid $primary;
+            border-right:1px solid $primary;
+            color:$white;
         }
     }
-    .tab{
-        display:none;
-        padding:$baseGutter;
-        border:1px solid $primary;
+}
 
-        &.active{display:block;}
-    }
+[role=tabpanel]{
+    display:none;
+    padding:$baseGutter;
+    border:1px solid $primary;
+
+    &.active{display:block;}
 }
