@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Brash UI</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="[[*description]]">
+<meta name="keywords" content="[[*keywords]]">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="http://fonts.googleapis.com/css?family=Roboto|Open+Sans:400,400italic,600" rel="stylesheet">
+<link rel="stylesheet" href="build/css/brash.css" />
+
+</head>
+<body>
+
+<section class="container mt1">
+    <h2>Tabs</h2>
+</section>
+
+<section class="container">
+    <div role="tablist">
+        <button role="tab" id="tab-btn-1" aria-selected="true" aria-controls="tab1" tabindex="0">Product</button>
+        <button role="tab" id="tab-btn-2" aria-selected="false" aria-controls="tab2" tabindex="0">Platform</button>
+        <button role="tab" id="tab-btn-3" aria-selected="false" aria-controls="tab3" tabindex="0">CMS</button>
+    </div>
+    <section role="tabpanel" class="active" id="tab1" aria-labelledby="tab-btn-1" tabindex="0">
+        <h2>Product</h2>
+        <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
+        <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
+    </section>
+    <section role="tabpanel" id="tab2" aria-labelledby="tab-btn-2" tabindex="0">
+        <h2>Platform</h2>
+        <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
+        <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
+    </section>
+    <section role="tabpanel" id="tab3" aria-labelledby="tab-btn-3" tabindex="0">
+        <h2>CMS</h2>
+        <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
+        <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
+    </section>
+</section>
+
+<script src="//code.jquery.com/jquery-3.0.0.min.js"></script>
+<script src="build/js/brash-ui.min.js"></script>
+<script>
+    $('[role=tab]').on("click keydown", function(e){ brashTab(this,e) });
+    $('[role=tabpanel]').on("keydown", function(e){ brashTabPanel(this,e) });
+</script>
+</body>
+</html>

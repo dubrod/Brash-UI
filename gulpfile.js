@@ -13,7 +13,7 @@ gulp.task('scripts', function() {
   return gulp.src(paths.scripts)
     .pipe(sourcemaps.init())
       .pipe(uglify())
-      .pipe(concat('app.min.js'))
+      .pipe(concat('brash-ui.min.js'))
     .pipe(sourcemaps.write('/maps'))
     .pipe(gulp.dest('build/js'));
 });
