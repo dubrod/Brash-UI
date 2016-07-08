@@ -12,6 +12,15 @@ a{
     &:hover{color: darken($primary,10%);}
 }
 
+hr{
+    border:none;
+    border-bottom: 1px solid $gray;
+    width:100%;
+    height:0;
+    margin: $baseGutter*2 0;
+    overflow:hidden;
+}
+
 main{
     @extend .container;
 

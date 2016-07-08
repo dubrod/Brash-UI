@@ -28,6 +28,8 @@
 @import "buttons";
 @import "forms";
 @import "grids";
-@import "tabs";
 @import "tables";
 @import "hero";
+
+//Components Rely on JS
+@import "components/tabs";
