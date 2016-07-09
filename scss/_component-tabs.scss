@@ -36,9 +36,10 @@
 }
 
 [role=tabpanel]{
-    display:none;
     padding:$baseGutter;
     border:1px solid $primary;
+    display:none;
 
-    &.active{display:block;}
+    &[aria-hidden="true"]{display:none;}
+    &[aria-hidden="false"]{display:block;}
 }

@@ -8,32 +8,39 @@ function brashTab(el,e) {
     el = $('#'+el.id);
 
     if (e.keyCode==37 || e.keyCode==38) {
-        el.prev().focus();
+        var target = el.prev();
+        target.focus();
+        triggerTabPanel(target,false);
         return false;
     }
 
     if (e.keyCode==39 || e.keyCode==40) {
-        el.next().focus();
+        var target = el.next();
+        target.focus();
+        triggerTabPanel(target,false);
         return false;
     }
 
-    //check if selected
-    if(el.attr('aria-selected') == "true"){
+    triggerTabPanel(el,true);
 
-        var panel = el.attr('aria-controls');
-        $('#'+panel).addClass('active').focus();
+}
 
-    } else{
+function triggerTabPanel(el,focus){
 
-        //set every blank
-        $('[role=tab]').attr('aria-selected','false');
-        $('[role=tabpanel]').removeClass('active');
+    //if no ID we have to quit
+    if(!el[0].id){return false;}
 
-        //set active elements
-        el.attr('aria-selected','true');
-        var panel = el.attr('aria-controls');
-        $('#'+panel).addClass('active').focus();
+    //set every blank
+    $('[role=tab]').attr('aria-selected','false');
+    $('[role=tabpanel]').attr('aria-hidden','true');
 
+    //set active elements
+    el.attr('aria-selected','true');
+    var panel = el.attr('aria-controls');
+    $('#'+panel).attr('aria-hidden','false');
+
+    if(focus){
+        setTimeout( function(){ $('#'+panel).focus(); },10);
     }
 }
 
