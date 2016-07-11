@@ -1,3 +1,6 @@
+//went with tab and key to change content and focus based on work
+//by http://ianmcburnie.github.io/mindpatterns/tabs/
+//and posts by webaim.org
 
 function brashTab(el,e) {
 
@@ -52,3 +55,27 @@ function brashTabPanel(el,e) {
         $('button[aria-controls="'+el.id+'"]').focus();
     }
 }
+
+
+//Tab Panel Slider Edition
+(function ($){
+
+    $.fn.brashTabSlider = function(options){
+
+        var settings = $.extend({
+            height: "400"
+        }, options );
+
+        this.height(settings.height);
+
+        //alter each panel
+        var imgs = this.find('img');
+        imgs.each(function(){
+            var img = $(this);
+            var tabpanel = img.parent();
+            tabpanel.height(settings.height);
+            tabpanel.css("background-image", "url('"+img.attr("src")+"')");
+        }).promise().done( function(){ setTimeout( function(){ imgs.remove(); },10); });
+    };
+
+}(jQuery));

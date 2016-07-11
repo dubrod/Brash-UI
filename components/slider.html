@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Tab Component - Brash UI</title>
+<title>Tab Panel - Slider Edition Component - Brash UI</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,30 +16,33 @@
 <body>
 
 <section class="container mt1">
-    <h2>Tabs</h2>
+    <h2>Tab Panel - Slider Edition</h2>
 </section>
 
-<section class="container">
-    <div role="tablist">
+<section class="container tab-slider">
+    <div role="tablist" class="tablist-slider">
         <button role="tab" id="tab-btn-1" aria-selected="true" aria-controls="tab1">Product</button>
         <button role="tab" id="tab-btn-2" aria-selected="false" aria-controls="tab2">Platform</button>
         <button role="tab" id="tab-btn-3" aria-selected="false" aria-controls="tab3">CMS</button>
     </div>
 
-    <section role="tabpanel" id="tab1" aria-labelledby="tab-btn-1" tabindex="0" aria-hidden="false">
+    <section role="tabpanel" class="tabpanel-slider" id="tab1" aria-labelledby="tab-btn-1" tabindex="0" aria-hidden="false">
         <h2>Product</h2>
         <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
-        <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
+        <p><a href="" class="btn">Read More</a></p>
+        <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/d-r-s/slides/slide-1.jpg" role="presentation">
     </section>
-    <section role="tabpanel" id="tab2" aria-labelledby="tab-btn-2" tabindex="0" aria-hidden="true">
+    <section role="tabpanel" class="tabpanel-slider" id="tab2" aria-labelledby="tab-btn-2" tabindex="0" aria-hidden="true">
         <h2>Platform</h2>
         <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
-        <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
+        <p><a href="" class="btn">Buy Now</a></p>
+        <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/d-r-s/slides/slide-2.jpg" role="presentation">
     </section>
-    <section role="tabpanel" id="tab3" aria-labelledby="tab-btn-3" tabindex="0" aria-hidden="true">
+    <section role="tabpanel" class="tabpanel-slider" id="tab3" aria-labelledby="tab-btn-3" tabindex="0" aria-hidden="true">
         <h2>CMS</h2>
-        <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
-        <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
+        <p>Enterprise development from MODX, awesome vetted professionals, and the greatest Community in Open Source.</p>
+        <p><a href="" class="btn">Continue</a></p>
+        <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/d-r-s/slides/slide-3.jpg" role="presentation">
     </section>
 
 </section>
@@ -51,6 +54,7 @@
 <script src="//code.jquery.com/jquery-3.0.0.min.js"></script>
 <script src="../build/js/brash-ui.min.js"></script>
 <script>
+    $('.tab-slider').brashTabSlider({height:400});
     $('[role=tab]').on("click keydown", function(e){ brashTab(this,e) });
     $('[role=tabpanel]').on("keydown", function(e){ brashTabPanel(this,e) });
 </script>

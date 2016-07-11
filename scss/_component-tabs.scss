@@ -1,7 +1,7 @@
 //Brash Tabs
 
 
-[role=tablist]{
+[role=tablist]:not('.tablist-slider'){
     margin-top: $baseGutter;
     display: flex;
     flex-basis:100%;
@@ -35,11 +35,75 @@
     }
 }
 
-[role=tabpanel]{
+[role=tabpanel]:not('.tabpanel-slider'){
     padding:$baseGutter;
     border:1px solid $primary;
     display:none;
 
-    &[aria-hidden="true"]{display:none;}
-    &[aria-hidden="false"]{display:block;}
+
+}
+
+[role=tabpanel]{
+    &[aria-hidden="true"]{display:none;z-index:9;}
+    &[aria-hidden="false"]{display:block;z-index:99;}
+}
+
+
+//Tab Panel Slider Edition
+.tab-slider{
+    position:relative;
+    margin-top: $baseGutter;
+    overflow:hidden;
+
+    .tablist-slider{
+        position: absolute;
+        z-index:999;
+        width:100%;
+        bottom:0;
+        padding:$baseGutter;
+        text-align:center;
+
+
+        button{
+            font-size:0;
+            line-height:1rem;
+            background:transparent;
+
+            &:before{
+            display:block;
+            content: "";
+            font-size:1.5rem;
+            background: $primary;
+            width:1rem;
+            height:1rem;
+            border-radius:50%;
+            }
+
+            &:hover{
+                &:before{
+                    background: $black;
+                }
+            }
+
+            &[aria-selected="true"]{
+                &:before{
+                    background: $secondary;
+                }
+            }
+        }
+    }
+
+    .tabpanel-slider{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        background-size:cover;
+        background-position: center center;
+        padding: 0 $baseGutter*2;
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
 }
