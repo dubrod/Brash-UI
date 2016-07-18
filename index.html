@@ -719,31 +719,108 @@
 </section>
 
 <section class="container">
-    <div role="tablist">
+    <div role="tablist" class="tablist">
         <button role="tab" id="tab-btn-1" aria-selected="true" aria-controls="tab1">Product</button>
         <button role="tab" id="tab-btn-2" aria-selected="false" aria-controls="tab2">Platform</button>
         <button role="tab" id="tab-btn-3" aria-selected="false" aria-controls="tab3">CMS</button>
     </div>
 
-    <section role="tabpanel" id="tab1" aria-labelledby="tab-btn-1" tabindex="0" aria-hidden="false">
+    <section role="tabpanel" class="tabpanel" id="tab1" aria-labelledby="tab-btn-1" tabindex="0" aria-hidden="false">
         <h2>Product</h2>
         <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
         <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
     </section>
-    <section role="tabpanel" id="tab2" aria-labelledby="tab-btn-2" tabindex="0" aria-hidden="true">
+    <section role="tabpanel" class="tabpanel" id="tab2" aria-labelledby="tab-btn-2" tabindex="0" aria-hidden="true">
         <h2>Platform</h2>
         <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
         <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
     </section>
-    <section role="tabpanel" id="tab3" aria-labelledby="tab-btn-3" tabindex="0" aria-hidden="true">
+    <section role="tabpanel" class="tabpanel" id="tab3" aria-labelledby="tab-btn-3" tabindex="0" aria-hidden="true">
         <h2>CMS</h2>
         <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
         <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
     </section>
 
-    <div class="mt1"><a href="components/tabs.html" class="btn-secondary-small">View Tab JS</a></div>
+    <div class="mt1"><a href="components/tabs.html" class="btn-secondary-small">View Tab Component with JS</a></div>
 
 </section>
+
+<section class="container mt2">
+    <h2>Tab Panel Slider Style (.tab-slider)</h2>
+</section>
+
+<section class="container">
+    <section class="tab-slider" style="height:400px;">
+        <div role="tablist" class="tablist-slider">
+            <button role="tab" id="tab-btn-1" aria-selected="true" aria-controls="tab1">Product</button>
+            <button role="tab" id="tab-btn-2" aria-selected="false" aria-controls="tab2">Platform</button>
+            <button role="tab" id="tab-btn-3" aria-selected="false" aria-controls="tab3">CMS</button>
+        </div>
+
+        <section style="height:400px;" role="tabpanel" class="tabpanel-slider" id="tab1" aria-labelledby="tab-btn-1" tabindex="0" aria-hidden="false">
+            <div class="gutter">
+                <h2>Product</h2>
+                <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
+                <p><a href="" class="btn">Read More</a></p>
+                <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/volcano.jpeg" role="presentation">
+            </div>
+        </section>
+        <section role="tabpanel" class="tabpanel-slider" id="tab2" aria-labelledby="tab-btn-2" tabindex="0" aria-hidden="true">
+            <div class="gutter">
+                <h2>Platform</h2>
+                <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
+                <p><a href="" class="btn">Buy Now</a></p>
+                <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/clouds.jpeg" role="presentation">
+            </div>
+        </section>
+        <section role="tabpanel" class="tabpanel-slider" id="tab3" aria-labelledby="tab-btn-3" tabindex="0" aria-hidden="true">
+            <div class="gutter">
+                <h2>CMS</h2>
+                <p>Enterprise development from MODX, awesome vetted professionals, and the greatest Community in Open Source.</p>
+                <p><a href="" class="btn">Continue</a></p>
+                <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/mountain-range.jpeg" role="presentation">
+            </div>
+        </section>
+    </section>
+
+    <div class="mt1"><a href="components/slider.html" class="btn-secondary-small">View Tab Slider Component with JS</a></div>
+
+</section>
+
+<section class="container mt2">
+    <h2>Accordion</h2>
+</section>
+
+<section class="container">
+
+    <dl class="accordion" tabindex="0">
+        <dt role="tab" tabindex="0" aria-controls="acc1">
+            <span>Product</span>
+            <svg version="1.1" id="chevron-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15.667px" height="10.833px" viewBox="0 0 15.667 10.833" enable-background="new 0 0 15.667 10.833" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.003,0L8,7.038L14.998,0v2.97L8,10.009L1.003,2.97V0z"></path></svg>
+        </dt>
+        <dd aria-hidden="true" id="acc1" tabindex="0" role="tabpanel">
+            The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.
+        </dd>
+        <dt role="tab" tabindex="0" aria-controls="acc2">
+            <span>Platform</span>
+            <svg version="1.1" id="chevron-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15.667px" height="10.833px" viewBox="0 0 15.667 10.833" enable-background="new 0 0 15.667 10.833" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.003,0L8,7.038L14.998,0v2.97L8,10.009L1.003,2.97V0z"></path></svg>
+        </dt>
+        <dd aria-hidden="true" id="acc2" tabindex="0" role="tabpanel">
+            Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.
+        </dd>
+        <dt role="tab" tabindex="0" aria-controls="acc3">
+            <span>CMS</span>
+            <svg version="1.1" id="chevron-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15.667px" height="10.833px" viewBox="0 0 15.667 10.833" enable-background="new 0 0 15.667 10.833" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.003,0L8,7.038L14.998,0v2.97L8,10.009L1.003,2.97V0z"></path></svg>
+        </dt>
+        <dd aria-hidden="true" id="acc3" tabindex="0" role="tabpanel">
+            Enterprise development from MODX, awesome vetted professionals, and the greatest Community in Open Source.
+        </dd>
+    </dl>
+
+    <div class="mt1"><a href="components/accordion.html" class="btn-secondary-small">View Accordion Component with JS</a></div>
+
+</section>
+
 
 <footer role="contentinfo" class="mt2">
     <section class="container" tabindex="0">

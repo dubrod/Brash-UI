@@ -72,7 +72,7 @@ function brashTabPanel(el,e) {
         var imgs = this.find('img');
         imgs.each(function(){
             var img = $(this);
-            var tabpanel = img.parent();
+            var tabpanel = img.parent().parent();
             tabpanel.height(settings.height);
             tabpanel.css("background-image", "url('"+img.attr("src")+"')");
         }).promise().done( function(){ setTimeout( function(){ imgs.remove(); },10); });

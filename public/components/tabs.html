@@ -14,39 +14,42 @@
 
 </head>
 <body>
-
-<section class="container mt1">
-    <h2>Tabs</h2>
-</section>
-
-<section class="container">
-    <div role="tablist">
-        <button role="tab" id="tab-btn-1" aria-selected="true" aria-controls="tab1">Product</button>
-        <button role="tab" id="tab-btn-2" aria-selected="false" aria-controls="tab2">Platform</button>
-        <button role="tab" id="tab-btn-3" aria-selected="false" aria-controls="tab3">CMS</button>
+    <div class="container">
+        <p class="py1"><a href="../index.html">Back to the Kitchen Sink</a></p>
     </div>
 
-    <section role="tabpanel" id="tab1" aria-labelledby="tab-btn-1" tabindex="0" aria-hidden="false">
-        <h2>Product</h2>
-        <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
-        <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
-    </section>
-    <section role="tabpanel" id="tab2" aria-labelledby="tab-btn-2" tabindex="0" aria-hidden="true">
-        <h2>Platform</h2>
-        <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
-        <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
-    </section>
-    <section role="tabpanel" id="tab3" aria-labelledby="tab-btn-3" tabindex="0" aria-hidden="true">
-        <h2>CMS</h2>
-        <p>Enterprise development from MODX, awesome vetted professionals, and the greatest Community in Open Source.</p>
-        <p>Enterprise development from MODX, awesome vetted professionals, and the greatest Community in Open Source.</p>
+    <section class="container mt1">
+        <h2>Tabs</h2>
     </section>
 
-</section>
+    <section class="container">
+        <div role="tablist" class="tablist">
+            <button role="tab" id="tab-btn-1" aria-selected="true" aria-controls="tab1">Product</button>
+            <button role="tab" id="tab-btn-2" aria-selected="false" aria-controls="tab2">Platform</button>
+            <button role="tab" id="tab-btn-3" aria-selected="false" aria-controls="tab3">CMS</button>
+        </div>
 
-<section class="container mt2" tabindex="0">
-    <p>Next section for tab testing.</p>
-</section>
+        <section role="tabpanel" class="tabpanel" id="tab1" aria-labelledby="tab-btn-1" tabindex="0" aria-hidden="false">
+            <h2>Product</h2>
+            <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
+            <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
+        </section>
+        <section role="tabpanel" class="tabpanel" id="tab2" aria-labelledby="tab-btn-2" tabindex="0" aria-hidden="true">
+            <h2>Platform</h2>
+            <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
+            <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
+        </section>
+        <section role="tabpanel" class="tabpanel" id="tab3" aria-labelledby="tab-btn-3" tabindex="0" aria-hidden="true">
+            <h2>CMS</h2>
+            <p>Enterprise development from MODX, awesome vetted professionals, and the greatest Community in Open Source.</p>
+            <p>Enterprise development from MODX, awesome vetted professionals, and the greatest Community in Open Source.</p>
+        </section>
+
+    </section>
+
+    <section class="container mt2" tabindex="0">
+        <p>Next section for tab testing.</p>
+    </section>
 
 <script src="//code.jquery.com/jquery-3.0.0.min.js"></script>
 <script src="../js/brash-ui.min.js"></script>
