@@ -72,6 +72,10 @@
     background-color: $light-gray;
     @include headings {color:$secondary;}
 
+    p{
+        margin-bottom: $baseGutter;
+    }
+
     ul{
 
         li{

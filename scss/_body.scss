@@ -26,18 +26,19 @@ main{
 
     @include headings {padding:0 0 $baseGutter 0;}
 
-    p{
-        margin-bottom: $baseGutter;
-    }
-
 }
 
 article{
 
     h1{color: $primary;}
 
+    p{
+        margin-bottom: $baseGutter;
+    }
+
     ul{
         margin:0 $baseGutter*2 $baseGutter $baseGutter*2;
         list-style: disc;
+        line-height: $baseGutter*1.75;
     }
 }

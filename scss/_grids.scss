@@ -80,7 +80,7 @@
         flex-flow: column nowrap;
         justify-content: space-between;
 
-        img{
+        &:not(.fill-card) img{
             padding: $baseGutter;
         }
 
