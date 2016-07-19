@@ -1,0 +1,27 @@
+
+.single-carousel{
+    overflow:hidden;
+    position:relative;
+
+    button{
+        position: absolute;
+        top:40%;
+        opacity:.4;
+
+        &:hover{opacity:1;}
+    }
+
+    button.next{
+        right:0;
+    }
+    button.prev{
+        left:0;
+    }
+
+    .c-item{
+        display:none;
+        overflow:hidden;
+
+        &.active{display:block;}
+    }
+}

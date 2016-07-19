@@ -22,6 +22,7 @@
 @import "breakpoints";
 
 @import "a11y";
+@import "animations";
 @import "body";
 @import "roles";
 @import "type";
@@ -33,4 +34,5 @@
 
 //Components Rely on JS
 @import "component-tabs";
-@import "component-accordion"
+@import "component-accordion";
+@import "component-carousel";

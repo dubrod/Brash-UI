@@ -79,3 +79,15 @@
     background-color: darken($gray, 10%);
   }
 }
+
+.next{
+    &:after{
+        content:">";
+    }
+}
+
+.prev{
+    &:after{
+        content:"<";
+    }
+}
