@@ -33,9 +33,11 @@ function triggerTabPanel(el,focus){
     //if no ID we have to quit
     if(!el[0].id){return false;}
 
-    //set every blank
-    $('[role=tab]').attr('aria-selected','false');
-    $('[role=tabpanel]').attr('aria-hidden','true');
+    //set every blank in this section
+    var parent = el.parent();
+    var grand = parent.parent();
+    parent.children('[role=tab]').attr('aria-selected','false');
+    grand.children('[role=tabpanel]').attr('aria-hidden','true');
 
     //set active elements
     el.attr('aria-selected','true');

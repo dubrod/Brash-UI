@@ -52,6 +52,10 @@
     margin-top: $baseGutter;
     overflow:hidden;
 
+    &.no-screen .tabpanel-slider .gutter{
+        background-color: transparent !important;
+    }
+
     .tablist-slider{
         position: absolute;
         z-index:999;
