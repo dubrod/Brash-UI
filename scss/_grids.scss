@@ -20,8 +20,30 @@
     margin-bottom: $baseGutter;
 }
 
+@mixin grid5{
+    flex: 0 0 calc(20.25% - #{$baseGutter});
+    margin-bottom: $baseGutter;
+}
+
 @mixin gridReset{
     @include respond-to($mobile){
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@mixin gridHalf{
+    @include respond-to($mobile){
+        flex: 0 0 calc(50.5% - #{$baseGutter});
+    }
+    @include respond-to($oldmobile){
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@mixin smallReset{
+    @include respond-to($oldmobile){
         flex-basis: 100%;
         max-width: 100%;
     }
@@ -49,32 +71,48 @@
         @include grid4;
     }
 
-    .grid-2,.grid-3,.grid-4{
+    .grid-5{
+        @include grid5;
+    }
+
+    //reset all the grid classes b/c .grid is a layout utility not a specific element like a card or tile
+    .grid-2,.grid-3,.grid-4,.grid-5{
         @include gridReset;
     }
+
 }
 
-.cards{
+.cards, .tiles{
     display:flex;
     flex-flow: row wrap;
     justify-content: space-between;
     padding: $baseGutter 0 0 0;
+    overflow:hidden;
 
-    .card-1{
+    .card-1, .tile-1{
         @include grid1;
     }
 
-    .card-2{
+    .card-2, .tile-2{
         @include grid2;
     }
 
-    .card-3{
+    .card-3, .tile-3{
         @include grid3;
     }
 
-    .card-4{
+    .card-4, .tile-4{
         @include grid4;
+        @include gridHalf;
     }
+
+    .tile-5{
+        @include grid5;
+        @include gridHalf;
+    }
+
+    .card-2, .tile-2,.card-3{@include gridReset;}
+    .tile-3{@include smallReset;}
 
     .card-1,.card-2,.card-3,.card-4{
         background-color: lighten($light-gray,2%);
@@ -83,6 +121,7 @@
         display:flex;
         flex-flow: column nowrap;
         justify-content: space-between;
+        overflow:hidden;
 
         &:not(.fill-card) img{
             padding: $baseGutter;
@@ -103,9 +142,31 @@
             }
         }
 
-        @include gridReset;
+    }
+
+    .tile-1,.tile-2,.tile-3,.tile-4,.tile-5{
+        background-color: lighten($light-gray,2%);
+        position: relative;
+
+        figcaption{
+            position: absolute;
+            z-index: 99;
+            bottom: 0;
+            padding: $baseGutter*1.5;
+        }
+
+        img{
+            position: relative;
+            z-index: 9;
+        }
+        &:not(.fill-tile) img{
+            padding: $baseGutter;
+            display:block;
+            margin:0 auto;
+        }
 
     }
+
 }
 
 .thumbs{
