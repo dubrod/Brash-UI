@@ -1,11 +1,16 @@
 //init objects
-var Tabs = function Tabs(el) {
+var TabSlider = function TabSlider(el) {
     this.element = el;
     return this.init();
 };
 
 //main function
-Tabs.prototype.init = function () {
+TabSlider.prototype.init = function () {
+
+    //slider Height
+    this.sliderHeight = this.element.getAttribute("data-height");
+    //console.log(this);
+    this.element.style.height = this.sliderHeight;
 
     // Bind events to the handler
     var that = this;
@@ -14,15 +19,23 @@ Tabs.prototype.init = function () {
     };
 
     this.Buttons = this.element.querySelectorAll('[role=tab]');
-    for (var i = 0, ii = this.Buttons.length; i < ii; i++) {
-        this.Buttons[i].addEventListener('click', this, false);
+    for (var b = 0, bb = this.Buttons.length; b < bb; b++) {
+        this.Buttons[b].addEventListener('click', this, false);
     }
 
     this.Panels = this.element.querySelectorAll('[role=tabpanel]');
+    for (var i = 0, ii = this.Panels.length; i < ii; i++) {
+        var panelImg;
+        panelImg = this.Panels[i].querySelectorAll('img');
+        this.Panels[i].style.backgroundImage="url('"+panelImg[0].src+"')";
+        this.Panels[i].style.height = this.sliderHeight;
+        panelImg[0].parentNode.removeChild(panelImg[0]);
+    }
+
 };
 
 //the handler
-Tabs.prototype.handleEvent = function (e) {
+TabSlider.prototype.handleEvent = function (e) {
     e = e || window.event;
     var target = e.target || e.srcElement;
     //console.log(target);
@@ -45,9 +58,9 @@ Tabs.prototype.handleEvent = function (e) {
 };
 
 //look for elements
-var brash_tabs = document.getElementsByClassName('brash_tab');
+var brash_tabslider = document.getElementsByClassName('brash_tabslider');
 
 //initialize elements
-if (brash_tabs.length) {
-    brash_tabs = initializeUI(brash_tabs, Tabs);
+if (brash_tabslider.length) {
+    brash_tabslider = initializeUI(brash_tabslider, TabSlider);
 }

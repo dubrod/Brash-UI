@@ -21,7 +21,7 @@
         <strong>Rules:</strong><br>
         - In each Carousel the `summary` ID must be unique<br>
         - In each Previous/Next Button having a `Carousel Name` will help Screen Readers seem unique<br>
-        - The class `c-item` is required on the element you want to move
+        - The class `c-item` is required on the element you want to move<br>
         - add the attribute `data-animation="fadein"` with a class that triggers an animation
     </p>
 </section>
@@ -29,33 +29,33 @@
 <section class="container">
     <h2 class="mb1">Single Carousel from .card-4 & .card-2</h2>
     <div class="cards">
-        <div class="card-4 fill-card single-carousel" data-animation="fadein" aria-live="assertive">
-            <p class="summary sr-only" id="single-carousel-0">Showing Slide <span class="index">1</span> of <span class="total"></span></p>
-            <button class="btn prev" aria-describedby="single-carousel-0"><span class="sr-only">Previous Slide for Star Wars Carousel</span></button>
-            <button class="btn next" aria-describedby="single-carousel-0"><span class="sr-only">Next Slide for Star Wars Carousel</span></button>
+        <div class="card-4 fill-card brash-carousel" data-animation="fadein" aria-live="assertive">
+            <p class="summary sr-only" id="brash-carousel-0">Showing Slide <span class="index">1</span> of <span class="total"></span></p>
+            <button class="btn prev" aria-describedby="brash-carousel-0"><span class="sr-only">Previous Slide for Star Wars Carousel</span></button>
+            <button class="btn next" aria-describedby="brash-carousel-0"><span class="sr-only">Next Slide for Star Wars Carousel</span></button>
             <figure class="c-item active">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic1.png" width="300" height="300" alt=""></a>
+                <a href=""><img src="../img/test-pic1.png" width="300" height="300" alt=""></a>
                 <figcaption>
                     <strong>Han Solo</strong>
                     A courageous space pirate
                 </figcaption>
             </figure>
             <figure class="c-item">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic2.jpg" width="300" height="300" alt=""></a>
+                <a href=""><img src="../img/test-pic2.jpg" width="300" height="300" alt=""></a>
                 <figcaption>
                     <strong>Princess Leia</strong>
                     The Rebellion leader
                 </figcaption>
             </figure>
             <figure class="c-item">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic3.png" width="300" height="300" alt=""></a>
+                <a href=""><img src="../img/test-pic3.png" width="300" height="300" alt=""></a>
                 <figcaption>
                     <strong>Rey</strong>
                     A young female warrior
                 </figcaption>
             </figure>
             <figure class="c-item">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic5.png" width="300" height="300" alt=""></a>
+                <a href=""><img src="../img/test-pic5.png" width="300" height="300" alt=""></a>
                 <figcaption>
                     <strong>Poe</strong>
                     The Rebellions Best Pilot
@@ -63,26 +63,26 @@
             </figure>
         </div>
 
-        <div class="card-2 single-carousel" aria-live="assertive" data-animation="pulse">
-            <p class="summary sr-only" id="single-carousel-1">Showing Slide <span class="index">1</span> of <span class="total"></span></p>
-            <button class="btn prev" aria-describedby="single-carousel-1"><span class="sr-only">Previous Slide for Rogue Carousel</span></button>
-            <button class="btn next" aria-describedby="single-carousel-1"><span class="sr-only">Next Slide for Rogue Carousel</span></button>
+        <div class="card-2 brash-carousel" aria-live="assertive" data-animation="pulse">
+            <p class="summary sr-only" id="brash-carousel-1">Showing Slide <span class="index">1</span> of <span class="total"></span></p>
+            <button class="btn prev" aria-describedby="brash-carousel-1"><span class="sr-only">Previous Slide for Rogue Carousel</span></button>
+            <button class="btn next" aria-describedby="brash-carousel-1"><span class="sr-only">Next Slide for Rogue Carousel</span></button>
             <figure class="c-item active">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic1.png" width="280" height="300" alt=""></a>
+                <a href=""><img src="../img/test-pic1.png" width="280" height="300" alt=""></a>
                 <figcaption>
                     <strong>Han Solo</strong>
                     A courageous space pirate
                 </figcaption>
             </figure>
             <figure class="c-item">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic2.jpg" width="260" height="300" alt=""></a>
+                <a href=""><img src="../img/test-pic2.jpg" width="260" height="300" alt=""></a>
                 <figcaption>
                     <strong>Princess Leia</strong>
                     The Rebellion leader
                 </figcaption>
             </figure>
             <figure class="c-item">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic3.png" width="300" height="300" alt=""></a>
+                <a href=""><img src="../img/test-pic3.png" width="300" height="300" alt=""></a>
                 <figcaption>
                     <strong>Rey</strong>
                     A young female warrior
@@ -94,22 +94,22 @@
 </section>
 
 <section class="container">
-    <h1>.card-1 + .fill-card + single-carousel</h1>
+    <h1>.card-1 + .fill-card + brash-carousel</h1>
 
     <div class="cards">
-        <div class="card-1 fill-card single-carousel" aria-live="assertive" data-animation="fadein">
-            <p class="summary sr-only" id="single-carousel-2">Showing Slide <span class="index">1</span> of <span class="total"></span></p>
-            <button class="btn prev" aria-describedby="single-carousel-2"><span class="sr-only">Previous Slide for MODX Carousel</span></button>
-            <button class="btn next" aria-describedby="single-carousel-2"><span class="sr-only">Next Slide for MODX Carousel</span></button>
+        <div class="card-1 fill-card brash-carousel" aria-live="assertive" data-animation="fadein">
+            <p class="summary sr-only" id="brash-carousel-2">Showing Slide <span class="index">1</span> of <span class="total"></span></p>
+            <button class="btn prev" aria-describedby="brash-carousel-2"><span class="sr-only">Previous Slide for MODX Carousel</span></button>
+            <button class="btn next" aria-describedby="brash-carousel-2"><span class="sr-only">Next Slide for MODX Carousel</span></button>
             <figure class="c-item active">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/clouds.jpeg" alt=""></a>
+                <a href=""><img src="../img/clouds.jpeg" alt=""></a>
                 <figcaption>
                     <strong>Han Solo</strong>
                     A courageous space pirate
                 </figcaption>
             </figure>
             <figure class="c-item">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/mountain-range.jpeg" alt=""></a>
+                <a href=""><img src="../img/mountain-range.jpeg" alt=""></a>
                 <figcaption>
                     <strong>Princess Leia</strong>
                     The Rebellion leader
@@ -120,52 +120,52 @@
 </section>
 
 <section class="container">
-    <h1>.grid-1 + .single-carousel</h1>
+    <h1>.grid-1 + .brash-carousel</h1>
 
     <div class="grid">
-        <div class="grid-1 single-carousel" aria-live="assertive">
-            <p class="summary sr-only" id="single-carousel-3">Showing Slide <span class="index">1</span> of <span class="total"></span></p>
-            <button class="btn prev" aria-describedby="single-carousel-3"><span class="sr-only">Previous Slide for Grid Carousel</span></button>
-            <button class="btn next" aria-describedby="single-carousel-3"><span class="sr-only">Next Slide for Grid Carousel</span></button>
+        <div class="grid-1 brash-carousel" aria-live="assertive">
+            <p class="summary sr-only" id="brash-carousel-3">Showing Slide <span class="index">1</span> of <span class="total"></span></p>
+            <button class="btn prev" aria-describedby="brash-carousel-3"><span class="sr-only">Previous Slide for Grid Carousel</span></button>
+            <button class="btn next" aria-describedby="brash-carousel-3"><span class="sr-only">Next Slide for Grid Carousel</span></button>
             <figure class="c-item active">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/clouds.jpeg" alt=""></a>
+                <a href=""><img src="../img/clouds.jpeg" alt=""></a>
             </figure>
             <figure class="c-item">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/mountain-range.jpeg" alt=""></a>
+                <a href=""><img src="../img/mountain-range.jpeg" alt=""></a>
             </figure>
         </div>
     </div>
 
-    <h1 class="mt1">.grid-2 + .center + single-carousel & .grid-2 with .grid-2 inside that</h1>
+    <h1 class="mt1">.grid-2 + .center + brash-carousel & .grid-2 with .grid-2 inside that</h1>
 
     <div class="grid">
-        <div class="grid-2 single-carousel center" aria-live="assertive">
-            <p class="summary sr-only" id="single-carousel-4">Showing Slide <span class="index">1</span> of <span class="total"></span></p>
-            <button class="btn prev" aria-describedby="single-carousel-4"><span class="sr-only">Previous Slide for Star Wars Grid Carousel</span></button>
-            <button class="btn next" aria-describedby="single-carousel-4"><span class="sr-only">Next Slide for Star Wars Grid Carousel</span></button>
+        <div class="grid-2 brash-carousel center" aria-live="assertive">
+            <p class="summary sr-only" id="brash-carousel-4">Showing Slide <span class="index">1</span> of <span class="total"></span></p>
+            <button class="btn prev" aria-describedby="brash-carousel-4"><span class="sr-only">Previous Slide for Star Wars Grid Carousel</span></button>
+            <button class="btn next" aria-describedby="brash-carousel-4"><span class="sr-only">Next Slide for Star Wars Grid Carousel</span></button>
             <figure class="c-item active">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic1.png" width="280" height="300" alt=""></a>
+                <a href=""><img src="../img/test-pic1.png" width="280" height="300" alt=""></a>
                 <figcaption>
                     <strong>Han Solo</strong>
                     A courageous space pirate
                 </figcaption>
             </figure>
             <figure class="c-item">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic2.jpg" width="260" height="300" alt=""></a>
+                <a href=""><img src="../img/test-pic2.jpg" width="260" height="300" alt=""></a>
                 <figcaption>
                     <strong>Princess Leia</strong>
                     The Rebellion leader
                 </figcaption>
             </figure>
             <figure class="c-item">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic3.png" width="300" height="300" alt=""></a>
+                <a href=""><img src="../img/test-pic3.png" width="300" height="300" alt=""></a>
                 <figcaption>
                     <strong>Rey</strong>
                     A young female warrior
                 </figcaption>
             </figure>
             <figure class="c-item">
-                <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic5.png" width="300" height="300" alt=""></a>
+                <a href=""><img src="../img/test-pic5.png" width="300" height="300" alt=""></a>
                 <figcaption>
                     <strong>Poe</strong>
                     The Rebellions Best Pilot
@@ -173,21 +173,21 @@
             </figure>
         </div>
 
-        <div class="grid-2 single-carousel" aria-live="assertive" data-animation="bounceInRight">
-            <p class="summary sr-only" id="single-carousel-5">Showing Slide <span class="index">1</span> of <span class="total"></span></p>
-            <button class="btn prev" aria-describedby="single-carousel-5"><span class="sr-only">Previous Slide for Star Wars Grid Carousel</span></button>
-            <button class="btn next" aria-describedby="single-carousel-5"><span class="sr-only">Next Slide for Star Wars Grid Carousel</span></button>
+        <div class="grid-2 brash-carousel" aria-live="assertive" data-animation="bounceInRight">
+            <p class="summary sr-only" id="brash-carousel-5">Showing Slide <span class="index">1</span> of <span class="total"></span></p>
+            <button class="btn prev" aria-describedby="brash-carousel-5"><span class="sr-only">Previous Slide for Star Wars Grid Carousel</span></button>
+            <button class="btn next" aria-describedby="brash-carousel-5"><span class="sr-only">Next Slide for Star Wars Grid Carousel</span></button>
             <div class="c-item active">
                 <div class="cards">
                     <figure class="card-2">
-                        <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic1.png" width="280" height="300" alt=""></a>
+                        <a href=""><img src="../img/test-pic1.png" width="280" height="300" alt=""></a>
                         <figcaption>
                             <strong>Han Solo</strong>
                             A courageous space pirate
                         </figcaption>
                     </figure>
                     <figure class="card-2">
-                        <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic2.jpg" width="260" height="300" alt=""></a>
+                        <a href=""><img src="../img/test-pic2.jpg" width="260" height="300" alt=""></a>
                         <figcaption>
                             <strong>Princess Leia</strong>
                             The Rebellion leader
@@ -198,14 +198,14 @@
             <div class="c-item">
                 <div class="cards">
                     <figure class="card-2">
-                        <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic3.png" width="300" height="300" alt=""></a>
+                        <a href=""><img src="../img/test-pic3.png" width="300" height="300" alt=""></a>
                         <figcaption>
                             <strong>Rey</strong>
                             A young female warrior
                         </figcaption>
                     </figure>
                     <figure class="card-2">
-                        <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic5.png" width="300" height="300" alt=""></a>
+                        <a href=""><img src="../img/test-pic5.png" width="300" height="300" alt=""></a>
                         <figcaption>
                             <strong>Poe</strong>
                             The Rebellions Best Pilot
@@ -219,37 +219,37 @@
 </section>
 
 <section class="container">
-    <h1>.grid-1 + .single-carousel with grids inside</h1>
+    <h1>.grid-1 + .brash-carousel with grids inside</h1>
 
-    <div class="grid-1 single-carousel" aria-live="assertive" data-animation="bounceInRight">
-        <p class="summary sr-only" id="single-carousel-6">Showing Slide <span class="index">1</span> of <span class="total"></span></p>
-        <button class="btn prev" aria-describedby="single-carousel-6"><span class="sr-only">Previous Slide for Star Wars Grid Carousel</span></button>
-        <button class="btn next" aria-describedby="single-carousel-6"><span class="sr-only">Next Slide for Star Wars Grid Carousel</span></button>
+    <div class="grid-1 brash-carousel" aria-live="assertive" data-animation="bounceInRight">
+        <p class="summary sr-only" id="brash-carousel-6">Showing Slide <span class="index">1</span> of <span class="total"></span></p>
+        <button class="btn prev" aria-describedby="brash-carousel-6"><span class="sr-only">Previous Slide for Star Wars Grid Carousel</span></button>
+        <button class="btn next" aria-describedby="brash-carousel-6"><span class="sr-only">Next Slide for Star Wars Grid Carousel</span></button>
         <div class="c-item active">
             <div class="cards">
                 <figure class="card-4">
-                    <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic1.png" width="280" height="300" alt=""></a>
+                    <a href=""><img src="../img/test-pic1.png" width="280" height="300" alt=""></a>
                     <figcaption>
                         <strong>Han Solo</strong>
                         A courageous space pirate
                     </figcaption>
                 </figure>
                 <figure class="card-4">
-                    <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic2.jpg" width="260" height="300" alt=""></a>
+                    <a href=""><img src="../img/test-pic2.jpg" width="260" height="300" alt=""></a>
                     <figcaption>
                         <strong>Princess Leia</strong>
                         The Rebellion leader
                     </figcaption>
                 </figure>
                 <figure class="card-4">
-                    <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic3.png" width="300" height="300" alt=""></a>
+                    <a href=""><img src="../img/test-pic3.png" width="300" height="300" alt=""></a>
                     <figcaption>
                         <strong>Rey</strong>
                         A young female warrior
                     </figcaption>
                 </figure>
                 <figure class="card-4">
-                    <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic5.png" width="300" height="300" alt=""></a>
+                    <a href=""><img src="../img/test-pic5.png" width="300" height="300" alt=""></a>
                     <figcaption>
                         <strong>Poe</strong>
                         The Rebellions Best Pilot
@@ -260,31 +260,32 @@
         <div class="c-item">
             <div class="cards">
                 <figure class="card-4">
-                    <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic1.png" width="280" height="300" alt=""></a>
-                    <figcaption>
-                        <strong>Han Solo 2</strong>
-                        A courageous space pirate
-                    </figcaption>
-                </figure>
-                <figure class="card-4">
-                    <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic2.jpg" width="260" height="300" alt=""></a>
-                    <figcaption>
-                        <strong>Princess Leia 2</strong>
-                        The Rebellion leader
-                    </figcaption>
-                </figure>
-                <figure class="card-4">
-                    <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic3.png" width="300" height="300" alt=""></a>
+                    <a href=""><img src="../img/test-pic3.png" width="300" height="300" alt=""></a>
                     <figcaption>
                         <strong>Rey 2</strong>
                         A young female warrior
                     </figcaption>
                 </figure>
                 <figure class="card-4">
-                    <a href=""><img src="https://dl.dropboxusercontent.com/u/4277345/codepen/test-pic5.png" width="300" height="300" alt=""></a>
+                    <a href=""><img src="../img/test-pic1.png" width="280" height="300" alt=""></a>
+                    <figcaption>
+                        <strong>Han Solo 2</strong>
+                        A courageous space pirate
+                    </figcaption>
+                </figure>
+                <figure class="card-4">
+                    <a href=""><img src="../img/test-pic5.png" width="300" height="300" alt=""></a>
                     <figcaption>
                         <strong>Poe 2</strong>
                         The Rebellions Best Pilot
+                    </figcaption>
+                </figure>
+
+                <figure class="card-4">
+                    <a href=""><img src="../img/test-pic2.jpg" width="260" height="300" alt=""></a>
+                    <figcaption>
+                        <strong>Princess Leia 2</strong>
+                        The Rebellion leader
                     </figcaption>
                 </figure>
             </div>

@@ -1,6 +1,6 @@
 # Brash UI
 
-> Brash doesn't give you BASSCSS type modularity. Brash tells you what markup to use. And you will like it.
+> UI Framework with a11y in mind.
 
 ---
 

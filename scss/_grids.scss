@@ -152,7 +152,10 @@
             position: absolute;
             z-index: 99;
             bottom: 0;
-            padding: $baseGutter*1.5;
+            padding: $baseGutter/2;
+        }
+        &:not(.fill-tile) figcaption{
+            padding: $baseGutter*1.25;
         }
 
         img{
@@ -438,6 +441,8 @@
 //Eliminate Nesting Double Padding on Components
 .grid .thumbs,
 .grid .cards,
+.grid .tiles,
 .columns .thumbs,
-.columns .cards
+.columns .cards,
+.columns .tiles
 {padding:0;}

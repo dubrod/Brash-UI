@@ -86,6 +86,20 @@ input[type="text"]:not(#search),input[type="tel"],input[type="email"],input[type
   }
 }
 
+input[type="file"]{
+    width: $input-width;
+    height: $input-height;
+    background-color: $light-gray;
+    padding: $baseGutter/2;
+    line-height: $baseGutter;
+    @-moz-document url-prefix() {padding:0;}
+
+    @include respond-to($mobile){
+      min-width:100%;
+      display:block;
+    }
+}
+
 select {
   width: $input-width;
   height: $input-height;

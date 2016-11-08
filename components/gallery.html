@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gallery Component - Brash UI</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="http://fonts.googleapis.com/css?family=Roboto|Open+Sans:400,400italic,600" rel="stylesheet">
+<link rel="stylesheet" href="../build/css/brash.css" />
+
+</head>
+<body>
+<div class="container">
+    <p class="py1"><a href="../index.html">Back to the Kitchen Sink</a></p>
+</div>
+
+<section class="container mt1 mb1">
+    <p class="p1">
+        <strong>Modal:</strong><br>
+        - `brash-modal_window` ID must be unique and match `brash-modal_btn` ID<br>
+          `heroModal_obj` and `heroModal`<br>
+        - Animations can be called using `data-animation="bounce"`, or leave alone to fade.
+        Animation names must match styles in `_animations.scss`. Only put `bounce` or `fade` not `bounceIn`.
+
+    </p>
+    <p class="p1">
+        <strong>Gallery:</strong><br>
+        - Each section requires the `brash_gallery` class name<br>
+        - Use `&lt;a&gt;` elements because Tabindex is inherited<br>
+        - Attributes `data-gallery="photo"` or `data-gallery="video"` are needed to activate Carousel<br>
+
+
+    </p>
+</section>
+
+<section class="container" tabindex="0">
+    <p><a href="heroModal" id="heroModal_obj" data-animation="bounce" class="brash-modal_btn btn-secondary-small">Pop the Modal</a></p>
+    <!-- MODAL -->
+    <div class="brash-modal_window" data-animation="bounce" id="heroModal" tabindex="-1">
+        <button class="brash-modal_close"><span class="sr-only">Close this Pop Up Window</span></button>
+        <div class="p2 clearfix">
+            <h2>You Poppd' a Modal</h2>
+            <p>Enterprise development from MODX, awesome vetted professionals, and the greatest Community in Open Source.</p>
+            <p>Enterprise development from MODX, awesome vetted professionals, and the greatest Community in Open Source.</p>
+            <p>Enterprise development from MODX, awesome vetted professionals, and the greatest Community in Open Source.</p>
+        </div>
+    </div>
+    <!-- eof modal -->
+</section>
+
+<section class="container brash_gallery" data-window="galleryModal" id="galleryModal_obj" tabindex="0">
+    <div class="tiles">
+        <figure class="tile-4">
+            <a href="../img/clouds.jpeg" data-gallery="photo" title="Click to Enlarge">
+                <img src="../img/clouds.jpeg" alt="These Clouds are so beautiful">
+            </a>
+            <figcaption>
+                <strong>Clouds</strong>
+            </figcaption>
+        </figure>
+        <figure class="tile-4">
+            <a href="https://www.youtube.com/embed/cQTuXzT2nB0" data-gallery="video" title="Click to Enlarge">
+                <img src="../img/mountain-range.jpeg" alt="MODX Manager SPA Author UI v1 ">
+            </a>
+            <figcaption>
+                <strong>Video Slide</strong><br>
+            </figcaption>
+        </figure>
+        <figure class="tile-4">
+            <a href="../img/rogue-one-421x236.jpg" data-gallery="photo" title="Click to Enlarge">
+                <img src="../img/rogue-one-421x236.jpg" alt="Rogue One, a Star Wars Story Cast Photo">
+            </a>
+            <figcaption>
+                <strong>Rogue One</strong>
+            </figcaption>
+        </figure>
+        <figure class="tile-4">
+            <a href="../img/volcano.jpeg" data-gallery="photo" title="Click to Enlarge">
+                <img src="../img/volcano.jpeg" alt="Volcanos are natures fire pit">
+            </a>
+            <figcaption>
+                <strong>Volcano</strong>
+            </figcaption>
+        </figure>
+    </div>
+    <!-- MODAL -->
+    <div class="brash-modal_window" id="galleryModal" tabindex="-1">
+        <button class="brash-modal_close"><span class="sr-only">Close this Gallery Window</span></button>
+        <button class="btn prev"><span class="sr-only">Previous Slide</span></button>
+        <button class="btn next"><span class="sr-only">Next Slide</span></button>
+        <div class="brash-modal_content"></div>
+    </div>
+    <!-- eof modal -->
+</section>
+
+<section class="container brash_gallery" data-animation="bounce" data-window="singleGalleryModal" id="singleGalleryModal_obj" tabindex="0">
+    <div class="tiles">
+        <figure class="tile-2">
+            <a href="https://dl.dropboxusercontent.com/u/4277345/codepen/photo-1456428199391-a3b1cb5e93ab.jpeg" data-gallery="photo" title="Click to Enlarge">
+                <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/wayne-avatar.jpg" alt="The Dude">
+            </a>
+            <figcaption>
+                <strong>Single Image Pop</strong>
+            </figcaption>
+        </figure>
+    </div>
+    <!-- MODAL -->
+    <div class="brash-modal_window" data-animation="bounce" id="singleGalleryModal" tabindex="-1">
+        <button class="brash-modal_close"><span class="sr-only">Close this Gallery Window</span></button>
+        <button class="btn prev"><span class="sr-only">Previous Slide</span></button>
+        <button class="btn next"><span class="sr-only">Next Slide</span></button>
+        <div class="brash-modal_content"></div>
+    </div>
+    <!-- eof modal -->
+</section>
+
+<section class="container mt2" tabindex="0">
+    <p>Next section for tab testing.</p>
+</section>
+
+<script src="//code.jquery.com/jquery-3.0.0.min.js"></script>
+<script src="../build/js/brash-ui.min.js"></script>
+
+</body>
+</html>

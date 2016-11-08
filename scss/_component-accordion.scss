@@ -13,6 +13,7 @@ dl.accordion{
       justify-content: space-between;
       align-items:center;
       width:100%;
+      transition: background-color $timing ease;
 
       &:hover{
         background-color: darken($light-gray,2%);

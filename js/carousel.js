@@ -38,7 +38,7 @@ Carousel.prototype.init = function () {
 
     return this;
 
-}
+};
 
 //the handler
 Carousel.prototype.handleEvent = function (e) {
@@ -86,7 +86,7 @@ Carousel.prototype.previousSlide = function () {
 
 
 //look for elements
-var single_carousels = document.getElementsByClassName('single-carousel');
+var single_carousels = document.getElementsByClassName('brash-carousel');
 
 //initialize elements
 if (single_carousels.length) {

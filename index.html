@@ -63,11 +63,12 @@
         </ul>
     </nav>
 </header>
-<section class="hero" style="height:400px; background-image: url('https://dl.dropboxusercontent.com/u/4277345/codepen/img/water-rock.jpeg');" tabindex="0">
+<section class="hero" style="height:400px; background-image: url('img/water-rock.jpeg');" tabindex="0">
     <div class="tlayer">
         <header class="container">
             <h1>This is a Hero</h1>
             <p>The content is vertically centered.</p>
+            <p><a href="#" class="btn-secondary-small">Secondary Small Button</a></p>
         </header>
     </div>
 </section>
@@ -308,7 +309,8 @@
         <figure class="tile-4">
             <img src="http://placehold.it/420x230" alt="">
             <figcaption>
-                <strong>MODX REVOLUTION</strong>
+                <strong>MODX REVOLUTION</strong><br>
+                <em>Subtitle</em>
             </figcaption>
         </figure>
         <figure class="tile-4">
@@ -335,7 +337,8 @@
         <figure class="tile-3 fill-tile">
             <img src="http://placehold.it/420x230" alt="">
             <figcaption>
-                <strong>.fill-tile</strong>
+                <strong>.fill-tile</strong><br>
+                <em>Subtitle</em>
             </figcaption>
         </figure>
         <figure class="tile-3 fill-tile">
@@ -350,7 +353,8 @@
         <figure class="tile-5 fill-tile">
             <img src="http://placehold.it/420x230" alt="">
             <figcaption>
-                <strong>.fill-tile</strong>
+                <strong>.fill-tile</strong><br>
+                <em>Subtitle</em>
             </figcaption>
         </figure>
         <figure class="tile-5 fill-tile">
@@ -514,7 +518,7 @@
         </div>
         <div class="col-6">
             <div class="cards">
-                <figure class="card">
+                <figure class="card-1">
                     <img src="http://placehold.it/500x200" alt="">
                     <figcaption>
                         <strong>Title One</strong>
@@ -522,6 +526,23 @@
                     </figcaption>
                 </figure>
             </div>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="col-6">
+            <div class="cards">
+                <figure class="card-1">
+                    <img src="http://placehold.it/500x200" alt="">
+                    <figcaption>
+                        <strong>Title One</strong>
+                        Telling your story in your visitors’ language improves engagement. For many, managing multi-language websites is clunky or tedious. Not MODX.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="col-6 debug flex-center">
+            <p>Centered Content</p>
+            <img src="http://placehold.it/250x250" alt="">
         </div>
     </div>
 </section>
@@ -679,6 +700,10 @@
                       <option value="2">Option 2</option>
                       <option value="3">Option 3</option>
                   </select>
+            </div>
+            <div class="input-wrapper">
+                <label for="file">File:</label>
+                <input type="file" id="file" name="file">
             </div>
             <div class="input-wrapper">
                 <label for="comments">Textarea</label>
@@ -839,7 +864,7 @@
     <h2 class="mt2">Tabs</h2>
 </section>
 
-<section class="container">
+<section class="container brash_tab">
     <div role="tablist" class="tablist">
         <button role="tab" id="tab-btn-1" aria-selected="true" aria-controls="tab1">Product</button>
         <button role="tab" id="tab-btn-2" aria-selected="false" aria-controls="tab2">Platform</button>
@@ -862,7 +887,7 @@
         <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
     </section>
 
-    <div class="mt1"><a href="components/tabs.html" class="btn-secondary-small">View Tab Component with JS</a></div>
+    <div class="mt1"><a href="components/tabs.html" class="btn-secondary-small">View Tab Component</a></div>
 
 </section>
 
@@ -871,40 +896,40 @@
 </section>
 
 <section class="container">
-    <section class="tab-slider" style="height:400px;">
+    <section class="tab-slider brash_tabslider" data-height="400px">
         <div role="tablist" class="tablist-slider">
-            <button role="tab" id="tab-btn-1" aria-selected="true" aria-controls="tab1">Product</button>
-            <button role="tab" id="tab-btn-2" aria-selected="false" aria-controls="tab2">Platform</button>
-            <button role="tab" id="tab-btn-3" aria-selected="false" aria-controls="tab3">CMS</button>
+            <button role="tab" id="tabslider-btn-1" aria-selected="true" aria-controls="tabslider1">Product</button>
+            <button role="tab" id="tabslider-btn-2" aria-selected="false" aria-controls="tabslider2">Platform</button>
+            <button role="tab" id="tabslider-btn-3" aria-selected="false" aria-controls="tabslider3">CMS</button>
         </div>
 
-        <section style="height:400px;" role="tabpanel" class="tabpanel-slider" id="tab1" aria-labelledby="tab-btn-1" tabindex="0" aria-hidden="false">
+        <section role="tabpanel" class="tabpanel-slider" id="tabslider1" aria-labelledby="tabslider-btn-1" tabindex="0" aria-hidden="false">
             <div class="gutter">
                 <h2>Product</h2>
                 <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
                 <p><a href="" class="btn">Read More</a></p>
-                <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/volcano.jpeg" role="presentation">
+                <img src="img/volcano.jpeg" role="presentation">
             </div>
         </section>
-        <section role="tabpanel" class="tabpanel-slider" id="tab2" aria-labelledby="tab-btn-2" tabindex="0" aria-hidden="true">
+        <section role="tabpanel" class="tabpanel-slider" id="tabslider2" aria-labelledby="tabslider-btn-2" tabindex="0" aria-hidden="true">
             <div class="gutter">
                 <h2>Platform</h2>
                 <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
                 <p><a href="" class="btn">Buy Now</a></p>
-                <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/clouds.jpeg" role="presentation">
+                <img src="img/clouds.jpeg" role="presentation">
             </div>
         </section>
-        <section role="tabpanel" class="tabpanel-slider" id="tab3" aria-labelledby="tab-btn-3" tabindex="0" aria-hidden="true">
+        <section role="tabpanel" class="tabpanel-slider" id="tabslider3" aria-labelledby="tabslider-btn-3" tabindex="0" aria-hidden="true">
             <div class="gutter">
                 <h2>CMS</h2>
                 <p>Enterprise development from MODX, awesome vetted professionals, and the greatest Community in Open Source.</p>
                 <p><a href="" class="btn">Continue</a></p>
-                <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/mountain-range.jpeg" role="presentation">
+                <img src="img/mountain-range.jpeg" role="presentation">
             </div>
         </section>
     </section>
 
-    <div class="mt1"><a href="components/slider.html" class="btn-secondary-small">View Tab Slider Component with JS</a></div>
+    <div class="mt1"><a href="components/slider.html" class="btn-secondary-small">View Tab Slider Component</a></div>
 
 </section>
 
@@ -938,7 +963,7 @@
         </dd>
     </dl>
 
-    <div class="mt1"><a href="components/accordion.html" class="btn-secondary-small">View Accordion Component with JS</a></div>
+    <div class="mt1"><a href="components/accordion.html" class="btn-secondary-small">View Accordion Component</a></div>
 
 </section>
 
@@ -948,5 +973,9 @@
         <p>Here is some copyright space.</p>
     </section>
 </footer>
+
+<script src="//code.jquery.com/jquery-3.0.0.min.js"></script>
+<script src="build/js/brash-ui.min.js"></script>
+
 </body>
 </html>

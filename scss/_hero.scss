@@ -17,6 +17,7 @@
             flex-flow: column wrap;
             justify-content: center;
             color: $white;
+            line-height:$baseGutter*3;
             h1{color: $primary;}
         }
     }
