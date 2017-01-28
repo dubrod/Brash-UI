@@ -15,8 +15,9 @@ function initializeUI(elementList, init) {
 //glboally turn off modals with Escape Key
 $(document).keyup(function(e) {
 	if (e.keyCode == 27) {
-		if($(".brash-modal_window").is(':visible')){
-		  $(".brash-modal_window .brash-modal_close").trigger('click');
+        var visibleModal = $(".brash-modal_window:visible");
+        if(visibleModal){
+		  visibleModal.children('.brash-modal_close').trigger('click');
 		}
 	}
 });

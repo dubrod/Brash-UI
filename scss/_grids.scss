@@ -33,10 +33,10 @@
 }
 
 @mixin gridHalf{
-    @include respond-to($mobile){
+    @include respond-to($tabletP){
         flex: 0 0 calc(50.5% - #{$baseGutter});
     }
-    @include respond-to($oldmobile){
+    @include respond-to($mobile){
         flex-basis: 100%;
         max-width: 100%;
     }

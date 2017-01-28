@@ -134,7 +134,7 @@ Gallery.prototype.nextSlide = function () {
 
     //console.log(this.Items[this.activeIndex]);
     this.createMedia(this.Items[this.activeIndex]);
-    
+
 };
 
 //look for elements
@@ -178,7 +178,12 @@ Modal.prototype.handleEvent = function (e) {
     e = e || window.event;
     var target = e.target || e.srcElement;
 
-    var modalId = $(target).attr("href");
+    var modalId;
+    modalId = $(target).attr("href");
+    if(!modalId){
+      //if no href on this target check the parent, sometimes elements inside the intended target get targeted
+      modalId = $(target).parent().attr("href");
+    }
     var pureEl = document.getElementById(modalId);
 
     pureEl.classList.add(this.anime+"In");
@@ -233,7 +238,10 @@ ModalWindow.prototype.handleEvent = function (e) {
     this.element.classList.remove(this.anime+"In");
 
     var mWindow = document.getElementById(this.element.id);
-    _st(removeClass, 800, mWindow, this.anime+"Out");
+    _st(removeClass, 770, mWindow, this.anime+"Out");
+
+    //find open iframes and remove them
+    $('.brash-modal_content iframe').remove();
 
     var obj = document.getElementById(""+this.element.id+"_obj");
     obj.focus();
