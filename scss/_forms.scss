@@ -4,32 +4,7 @@ $input-width: 20rem !default;
 $input-height: 2rem !default;
 $input-bg: darken($white,1%);
 
-[role=search]{
-    input[type="text"]{
-        text-indent: $baseGutter/2;
-        background-color: $white;
-        height:30px;
-        vertical-align:middle;
-    }
-    button{
-        background-color: darken($headerColor,4%);
-        height:30px;
-        width:30px;
-        vertical-align:middle;
-        svg{
-            fill:$white;
-            height:20px;
-            width:20px;
-            vertical-align:top;
-        }
-
-        &:hover{
-            background-color: darken($headerColor,6%);
-        }
-    }
-}
-
-fieldset{margin: 0; padding: 0; border: none;}
+fieldset{margin: 0; padding: 0; border: none; min-height:$input-height;}
 input.error,textarea.error{border:1px solid $red !important;}
 .valid{border:1px solid $green !important;}
 .errorBox{
@@ -71,7 +46,7 @@ form{
       }
 }
 
-input[type="text"]:not(#search),input[type="tel"],input[type="email"],input[type="password"],input[type="number"] {
+input[type="text"],input[type="tel"],input[type="email"],input[type="password"],input[type="number"] {
   appearance: none;
   max-width: 100%;
   width: $input-width;
@@ -95,7 +70,7 @@ input[type="file"]{
     @-moz-document url-prefix() {padding:0;}
 
     @include respond-to($mobile){
-      min-width:100%;
+      max-width:100%;
       display:block;
     }
 }
@@ -105,7 +80,7 @@ select {
   height: $input-height;
 
   @include respond-to($mobile){
-    min-width:100%;
+    max-width:100%;
     display:block;
   }
 }
@@ -127,7 +102,7 @@ textarea {
 
 
 //input color
-input[type="text"]:not(#search),input[type="tel"],input[type="email"],input[type="password"],input[type="number"],
+input[type="text"],input[type="tel"],input[type="email"],input[type="password"],input[type="number"],
 textarea,
 select {
 transition: box-shadow $timing ease;
@@ -229,7 +204,7 @@ input[type="range"]{
       width: 100%;
       small{display:inline-block; padding-left:$baseGutter;}
   }
-  input[type="text"]:not(#search),input[type="tel"],input[type="email"],input[type="password"],input[type="number"],
+  input[type="text"],input[type="tel"],input[type="email"],input[type="password"],input[type="number"],
   select,
   textarea{
     display: block;
@@ -244,7 +219,7 @@ input[type="range"]{
 
 //Inline Form
 .form-inline{
-    input[type="text"]:not(#search),input[type="tel"],input[type="email"],input[type="password"],input[type="number"]{
+    input[type="text"],input[type="tel"],input[type="email"],input[type="password"],input[type="number"]{
         width:$input-width/1.5;
     }
     .input-wrapper{

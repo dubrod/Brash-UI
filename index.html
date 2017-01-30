@@ -12,8 +12,12 @@
 <link href="http://fonts.googleapis.com/css?family=Roboto|Open+Sans:400,400italic,600" rel="stylesheet">
 <link rel="stylesheet" href="build/css/brash.css">
 
+<style>
+[role=complementary]{background-color: rgba(0,0,0,.1);}
+</style>
+
 </head>
-<body>
+<body class="point-grid">
 <a href="#main" title="Skip to Content" class="sr-only">Skip to Content</a>
 <header role="banner" tabindex="0">
     <section class="container" tabindex="0">
@@ -42,15 +46,7 @@
             </svg>
             <label class="h1">Brash UI</label>
         </div>
-        <form role="search">
-            <fieldset>
-                <label for="search"><span class="sr-only">Search the website</span></label>
-                <input type="text" id="search" name="search" placeholder="search..."><button type="submit">
-                    <span class="sr-only">Submit Search</span>
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.59,42.669L36.097,30.545c2.101-2.997,3.326-6.635,3.326-10.565 c0-10.218-8.313-18.501-18.563-18.501c-10.256,0-18.566,8.283-18.566,18.501c0,10.211,8.311,18.498,18.566,18.498 c3.94,0,7.597-1.23,10.605-3.313l0,0l12.494,12.121c0.259,0.25,0.664,0.266,0.929,0.005l3.703-3.707 C48.85,43.34,48.84,42.908,48.59,42.669 M20.86,33.07c-7.261,0-13.147-5.858-13.147-13.09c0-7.237,5.886-13.102,13.147-13.102 c7.253,0,13.149,5.865,13.149,13.102C34.009,27.212,28.113,33.07,20.86,33.07"></path></svg>
-                    </button>
-            </fieldset>
-        </form>
+
     </section>
     <nav role="navigation">
         <ul role="menu" aria-label="Main menu">
@@ -108,9 +104,9 @@
 
 <section class="container" tabindex="0">
     <div class="columns">
-        <div class="col-1 debug">.col-1</div>
-        <div class="col-2 debug">.col-2</div>
-        <div class="col-3 debug">.col-3</div>
+        <div class="col-1 debug"><p>.col-1</p></div>
+        <div class="col-2 debug"><p>.col-2</p></div>
+        <div class="col-3 debug"><p>.col-3</p></div>
     </div>
 </section>
 
@@ -259,13 +255,6 @@
 
 <section class="container" tabindex="0">
     <div class="cards">
-        <figure class="card-4">
-            <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/rogue-one-421x236.jpg" width="421" height="236" alt="">
-            <figcaption>
-                <strong>FIXED IMAGE</strong>
-                This image is 421x236 with coded sizes
-            </figcaption>
-        </figure>
         <figure class="card-4">
             <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/rogue-one-421x236.jpg" alt="">
             <figcaption>

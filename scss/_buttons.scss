@@ -10,9 +10,8 @@
   -webkit-appearance: none;
   appearance: none;
   display: inline-block;
-  line-height: $baseGutter*2;
+  line-height: $baseGutter*1.6;
   height: auto;
-  min-height: $baseGutter*2;
   padding: $baseGutter/2 $baseGutter;
 
 }

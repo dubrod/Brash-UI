@@ -14,25 +14,12 @@
     #logo{
         padding: $baseGutter 0;
         flex-basis: 50%;
-        svg{fill: $black;}
+        svg{fill: $black;height:40px;}
         label{vertical-align:middle;}
 
         @include respond-to($oldmobile){
             flex-basis: 100%;
             text-align:center;
-        }
-    }
-
-    [role=search]{
-        display:flex;
-        justify-content: flex-end;
-        flex-basis: 50%;
-        padding: $baseGutter 0;
-
-
-        @include respond-to($oldmobile){
-            flex-basis: 100%;
-            justify-content:center;
         }
     }
 
@@ -69,7 +56,7 @@
 }
 
 [role=complementary]{
-    background-color: $light-gray;
+    
     @include headings {color:$secondary;}
 
     p{

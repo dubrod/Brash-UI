@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Brash Grid UI</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="[[*description]]">
+<meta name="keywords" content="[[*keywords]]">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link href="http://fonts.googleapis.com/css?family=Roboto|Open+Sans:400,400italic,600" rel="stylesheet">
+<link rel="stylesheet" href="build/css/brash.css">
+</head>
+<body class="point-grid">
+
+  <section class="container mt2">
+      <h2>Forms</h2>
+  </section>
+
+  <section class="container" tabindex="0">
+
+      <form class="narrow">
+              <div class="input-wrapper">
+              <label for="name">Text Input: </label>
+              <input name="name" id="name" type="text" placeholder="Name" pattern="([A-Za-z])+.{6,}" data-msg="letters" required>
+              </div>
+              <div class="input-wrapper">
+                <label for="phone">Tel Input:</label>
+                <input name="phone" id="phone" type="tel" placeholder="Telephone" pattern="([0-9])+.{5,}" data-msg="numbers" required>
+              </div>
+              <div class="input-wrapper">
+                <label for="email">Email Input:</label>
+                <input name="email" id="email" type="email" placeholder="Email Address" data-msg="email" required>
+              </div>
+              <div class="input-wrapper">
+                <label for="budget">Project Budget:</label>
+                <input name="budget" id="budget" data-msg="numbers" type="number" min="1000" max="100000" step="500" value="10000">
+              </div>
+              
+              <fieldset class="input-wrapper" id="favorite" tabindex="0" data-fivermsg="Wordpress is not an option" required>
+                <label>Favorite CMS:</label>
+                <label class="inline"><input name="favorite" id="favorite-1" type="radio"> <span>MODX</span></label>
+                <label class="inline"><input name="favorite" id="favorite-2" type="radio"> <span>or MODX</span></label>
+                <label class="inline"><input name="favorite" id="favorite-3" type="radio"> <span>or even MODX</span></label>
+              </fieldset>
+              <fieldset class="input-wrapper" id="services" tabindex="0" required>
+                <label>Checkbox Services:</label>
+                <label class="inline"><input name="services" id="services-1" type="checkbox"> <span>Hosting</span></label>
+                <label class="inline"><input name="services" id="services-2" type="checkbox"> <span>App Development</span></label>
+                <label class="inline"><input name="services" id="services-3" type="checkbox"> <span>Dashboard Design</span></label>
+              </fieldset>
+              <div class="input-wrapper">
+                    <label for="select">Select Label:</label>
+                    <select name="select" id="select" required>
+                        <option value="">Select</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+              </div>
+              <div class="input-wrapper">
+                  <label for="file">File:</label>
+                  <input type="file" id="file" name="file">
+              </div>
+              <div class="input-wrapper">
+                  <label for="comments">Textarea</label>
+                  <textarea name="comments" id="comments" placeholder="Comments..." required></textarea>
+              </div>
+              <div class="input-wrapper">
+                  <label></label>
+                  <button type="submit" class="btn">SUBMIT</button>
+              </div>
+        </form>
+
+        <h4 class="mt1 mb1">.form-inline</h4>
+        <form class="form-inline narrow">
+              <div class="input-wrapper">
+                  <input name="username" id="username" type="text" placeholder="Username" pattern="([A-Za-z])+.{6,}" data-msg="letters" autocomplete="off" required>
+              </div>
+              <div class="input-wrapper">
+                  <input name="password" id="password" type="password" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" data-msg="password" data-fivermsg="Passwords require at least one uppercase, one lowercase, and one number" required>
+              </div>
+              <button type="submit" class="btn-secondary-small">LOGIN</button>
+        </form>
+
+        <h4 class="mt1 mb1">.form-stacked</h4>
+        <form class="narrow form-stacked">
+                <div class="input-wrapper">
+                <label for="name">Text Input: </label>
+                <input name="name" id="name" type="text" placeholder="Name" pattern="([A-Za-z])+.{6,}" data-msg="letters" required>
+                </div>
+                <div class="input-wrapper">
+                  <label for="phone">Tel Input:</label>
+                  <input name="phone" id="phone" type="tel" placeholder="Telephone" pattern="([0-9])+.{5,}" data-msg="numbers" required>
+                </div>
+                <div class="input-wrapper">
+                  <label for="email">Email Input:</label>
+                  <input name="email" id="email" type="email" placeholder="Email Address" data-msg="email" required>
+                </div>
+                <div class="input-wrapper">
+                  <label for="budget">Project Budget:<small>USD</small></label>
+                  <input name="budget" id="budget" data-msg="numbers" type="number" min="1000" max="100000" step="500" value="10000">
+                </div>
+                <div class="input-wrapper">
+                    <label for="range">Project Budget:<small>USD</small></label>
+                    <input type="range" id="range" name="range" data-msg="numbers" min="1000" max="100000" step="500" value="10000"><span class="range-value">10000</span>
+                </div>
+                <div class="grid">
+                    <div class="grid-2">
+                        <fieldset class="input-wrapper" id="favorite" tabindex="0" data-fivermsg="Wordpress is not an option" required>
+                          <label>Favorite CMS:</label>
+                          <label class="inline"><input name="favorite" id="favorite-1" type="radio"> <span>MODX</span></label>
+                          <label class="inline"><input name="favorite" id="favorite-2" type="radio"> <span>or MODX</span></label>
+                          <label class="inline"><input name="favorite" id="favorite-3" type="radio"> <span>or even MODX</span></label>
+                        </fieldset>
+                    </div>
+                    <div class="grid-2">
+                        <fieldset class="input-wrapper" id="services" tabindex="0" required>
+                          <label>Checkbox Services:</label>
+                          <label class="inline"><input name="services" id="services-1" type="checkbox"> <span>Hosting</span></label>
+                          <label class="inline"><input name="services" id="services-2" type="checkbox"> <span>App Development</span></label>
+                          <label class="inline"><input name="services" id="services-3" type="checkbox"> <span>Dashboard Design</span></label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                      <label for="select">Select Label:</label>
+                      <select name="select" id="select" required>
+                          <option value="">Select</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                      </select>
+                </div>
+                <div class="input-wrapper">
+                    <label for="comments">Textarea</label>
+                    <textarea name="comments" id="comments" placeholder="Comments..." required></textarea>
+                </div>
+                <div class="input-wrapper">
+                    <label></label>
+                    <button type="submit" class="btn">SUBMIT</button>
+                </div>
+          </form>
+
+  </section>
+
+</body>
+</html>

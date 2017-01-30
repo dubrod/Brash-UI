@@ -1,10 +1,11 @@
 //Brash Vars
 
-$radius: .5rem;
+$radius: .4rem;
 
 //Type
 $bodyFont: "Open Sans", Arial, sans-serif;
 $headingFont: "Roboto", Helvetica Neue, Helvetica, sans-serif;
+strong, .bold{font-weight:600;}
 
 //Colors
 $white: #FFFFFF;
@@ -29,4 +30,5 @@ $baseGutter: 1rem;
 $timing: .4s;
 
 //Debug
-.debug{border: 1px solid $secondary;}
+.debug{background-color:rgba(125, 211, 236, 0.2);}
+.point-grid{background-image: url('baseline-16.svg');background-size: 1rem;}
