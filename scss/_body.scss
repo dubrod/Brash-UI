@@ -1,7 +1,11 @@
+////
+/// @group Body
+////
 
+///Base
 body{
     font-family: $bodyFont;
-    font-size: .8rem;
+    font-size: .9rem;
     background-color: $white;
     color: $black;
 }
@@ -38,6 +42,5 @@ article{
     ul{
         margin:0 $baseGutter*2 $baseGutter $baseGutter*2;
         list-style: disc;
-        line-height: $baseGutter*1.75;
     }
 }

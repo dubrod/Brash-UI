@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="css/brash.css" />
 
 </head>
-<body>
+<body class="point-grid">
 <a href="#main" title="Skip to Content" class="sr-only">Skip to Content</a>
 <header role="banner" tabindex="0">
     <section class="container" tabindex="0">
@@ -42,32 +42,25 @@
             </svg>
             <label class="h1">Brash UI</label>
         </div>
-        <form role="search">
-            <fieldset>
-                <label for="search"><span class="sr-only">Search the website</span></label>
-                <input type="text" id="search" name="search" placeholder="search..."><button type="submit">
-                    <span class="sr-only">Submit Search</span>
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.59,42.669L36.097,30.545c2.101-2.997,3.326-6.635,3.326-10.565 c0-10.218-8.313-18.501-18.563-18.501c-10.256,0-18.566,8.283-18.566,18.501c0,10.211,8.311,18.498,18.566,18.498 c3.94,0,7.597-1.23,10.605-3.313l0,0l12.494,12.121c0.259,0.25,0.664,0.266,0.929,0.005l3.703-3.707 C48.85,43.34,48.84,42.908,48.59,42.669 M20.86,33.07c-7.261,0-13.147-5.858-13.147-13.09c0-7.237,5.886-13.102,13.147-13.102 c7.253,0,13.149,5.865,13.149,13.102C34.009,27.212,28.113,33.07,20.86,33.07"></path></svg>
-                    </button>
-            </fieldset>
-        </form>
+
     </section>
     <nav role="navigation">
         <ul role="menu" aria-label="Main menu">
             <li role="menuitem"><a href="" class="">Home</a></li>
-          	<li role="menuitem"><a href="#layout" class="">Layout</a></li>
-          	<li role="menuitem"><a href="#buttons" class="">Buttons</a></li>
-          	<li role="menuitem"><a href="#forms" class="">Forms</a></li>
-          	<li role="menuitem"><a href="#components" class="">Components</a></li>
-          	<li role="menuitem"><a href="#theme" class="">Theme</a></li>
+          	<li role="menuitem"><a href="components/accordion.html" class="">Accordion</a></li>
+          	<li role="menuitem"><a href="components/carousel.html" class="">Carousel</a></li>
+          	<li role="menuitem"><a href="components/gallery.html" class="">Gallery</a></li>
+          	<li role="menuitem"><a href="components/slider.html" class="">Slider</a></li>
+          	<li role="menuitem"><a href="components/tabs.html" class="">Tabs</a></li>
         </ul>
     </nav>
 </header>
-<section class="hero" style="height:400px; background-image: url('https://dl.dropboxusercontent.com/u/4277345/codepen/img/water-rock.jpeg');" tabindex="0">
+<section class="hero" style="height:400px; background-image: url('img/water-rock.jpeg');" tabindex="0">
     <div class="tlayer">
         <header class="container">
             <h1>This is a Hero</h1>
             <p>The content is vertically centered.</p>
+            <p><a href="#" class="btn-secondary-small">Secondary Small Button</a></p>
         </header>
     </div>
 </section>
@@ -75,16 +68,16 @@
     <div class="columns">
         <article aria-labelledby="heading" tabindex="0" class="col-8">
             <h1 id="heading">Heading One</h1>
+            <h2>Heading Two</h2>
+            <h3>heading three</h3>
+            <h4>head four</h4>
             <p><strong>This is a .col-8</strong></p>
-            <p>You think water moves fast? <a href="">You should see ice</a>. It moves like it has a mind. Like it knows it <strong>killed the world once</strong> and got a taste for murder. After the avalanche, it took us a week to climb out.</p>
-            <p>Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+            <p>Our software is different. Anyone in the world can download or try it free in <a href="http://www.modxcloud.com" target="_blank">MODX Cloud</a>, learn it, and support their website with it – without limitations.</p>
             <ul>
-                <li>Do you see any <strong>Teletubbies</strong> in here?</li>
-                <li>Do you see a slender plastic tag clipped to my shirt with my name printed on it?</li>
-                <li>Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it?</li>
-                <li>No?</li>
-                <li>Well, that's what you see at a toy store.</li>
-                <li>And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</li>
+                <li>11 years in <strong>Business</strong></li>
+                <li><strong>99x</strong> Fewer Security Vulnerabilities</li>
+                <li>4,789,342+ Downloads</li>
+                <li>98 Versions Released</li>
             </ul>
 
         </article>
@@ -98,11 +91,65 @@
                 <li><a href="">Basic List Markup</a></li>
             </ul>
             <p>
-                I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
+                Move beyond the blog. Scale like never before. Realize creative freedom. Welcome to MODX.
             </p>
         </aside>
     </div>
 </main>
+
+<section class="container mt1">
+  <h2>Buttons</h2>
+  <div class="columns">
+    <div class="col-2">
+      <a href="#" class="btn">Primary Button</a>
+    </div>
+    <div class="col-2">
+      <a href="#" class="btn-secondary">Secondary Button</a>
+    </div>
+    <div class="col-2">
+      <a href="#" class="btn-small">Primary Small Button</a>
+    </div>
+    <div class="col-2">
+      <a href="#" class="btn-secondary-small">Secondary Small Button</a>
+    </div>
+  </div>
+  <div class="columns">
+    <div class="col-2">
+      <a href="#" class="btn">
+        <svg version="1.1" id="previous" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="5.564px" height="12px" viewBox="2.218 -2.218 5.564 12" enable-background="new 2.218 -2.218 5.564 12" xml:space="preserve"><polygon points="2.217,2.765 6.661,-2.214 7.78,-1.214 4.225,2.769 7.782,6.789 6.659,7.783 "/></svg>
+        PREVIOUS
+      </a>
+    </div>
+    <div class="col-2">
+      <a href="#" class="btn">
+        NEXT
+        <svg version="1.1" id="next" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="5.564px" height="12px" viewBox="2.218 -2.218 5.564 12" enable-background="new 2.218 -2.218 5.564 12" xml:space="preserve"><polygon points="7.781,2.802 3.337,7.781 2.218,6.781 5.773,2.798 2.216,-1.222 3.339,-2.216 "/></svg>
+      </a>
+    </div>
+    <div class="col-2">
+      <a href="#" class="btn-gray">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="16px" viewBox="0 0 12 16" enable-background="new 0 0 12 16" xml:space="preserve"><polygon points="9.97,11.03 6,7.061 2.03,11.03 0.97,9.97 4.939,6 0.97,2.03 2.03,0.97 6,4.939 9.97,0.97 11.03,2.03 7.061,6 11.03,9.97 "/></svg>
+        CANCEL
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="container mt1">
+  <h2>Icons</h2>
+  <div class="columns">
+    <div class="col-2">
+      <svg version="1.1" id="envelope" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18.046px" height="25px" viewBox="0 -4 18.046 25" enable-background="new 0 0 18.046 25" xml:space="preserve"><path d="M15.678,0H2.369C1.062,0,0,1.062,0,2.369v10.263C0,13.938,1.062,15,2.369,15h13.309c1.307,0,2.368-1.062,2.368-2.368V2.369 C18.046,1.062,16.984,0,15.678,0z M2.369,1.292h13.309c0.593,0,1.075,0.483,1.075,1.077v1.36L9.024,8.146L1.292,3.728V2.369 C1.292,1.775,1.775,1.292,2.369,1.292z M15.678,13.708H2.369c-0.594,0-1.077-0.483-1.077-1.076V4.721l7.732,4.418l7.729-4.418v7.911 C16.753,13.225,16.271,13.708,15.678,13.708z"/></svg>
+      Contact Us
+    </div>
+    <div class="col-2">
+      <svg version="1.1" id="marker" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="25px" viewBox="0 0 22 25" enable-background="new 0 0 22 25" xml:space="preserve"><path d="M11.081,0.157c-6.369,0-10.69,4.976-10.765,10.19c-0.12,8.321,10.765,14.497,10.765,14.497 s10.653-6.176,10.771-14.497C21.924,5.132,17.447,0.157,11.081,0.157"/></svg> East Citrus Hills
+    </div>
+    <div class="col-2">
+      <svg version="1.1" id="menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="25px" viewBox="0 -4 18 25" enable-background="new 0 0 18 25" xml:space="preserve"><path d="M0,1.751h18V3.25H0V1.751z M0,8.75h18V7.251H0V8.75z M0,14.25h18v-1.5H0V14.25z"/></svg> Navigation
+    </div>
+  </div>
+</section>
 
 <section class="container mt1">
     <h2>Columns <small>Padding. No Gutters.</small></h2>
@@ -110,9 +157,9 @@
 
 <section class="container" tabindex="0">
     <div class="columns">
-        <div class="col-1 debug">.col-1</div>
-        <div class="col-2 debug">.col-2</div>
-        <div class="col-3 debug">.col-3</div>
+        <div class="col-1 debug"><p>.col-1</p></div>
+        <div class="col-2 debug"><p>.col-2</p></div>
+        <div class="col-3 debug"><p>.col-3</p></div>
     </div>
 </section>
 
@@ -132,12 +179,19 @@
 
 <section class="container" tabindex="0">
     <div class="columns">
+        <div class="col-4 debug">.col-4</div>
+        <div class="col-8 debug">.col-8</div>
+    </div>
+</section>
+
+<section class="container" tabindex="0">
+    <div class="columns">
         <div class="col-12 debug">.col-12 or .col</div>
     </div>
 </section>
 
 <section class="container mt1">
-    <h2>Grids <small>Calculated Gutters. No Padding.</small></h2>
+    <h2>Flex Grid <small>Calculated Gutters. No Padding.</small></h2>
 </section>
 
 <section class="container" tabindex="0">
@@ -172,7 +226,19 @@
         <div class="grid-4 debug">.grid-4</div>
         <div class="grid-4 debug">.grid-4</div>
         <div class="grid-4 debug">.grid-4</div>
-        <div class="grid-4 debug">.grid-4</div>
+    </div>
+</section>
+
+<section class="container" tabindex="0">
+    <div class="grid">
+        <div class="grid-5 debug">.grid-5</div>
+        <div class="grid-5 debug">.grid-5</div>
+        <div class="grid-5 debug">.grid-5</div>
+        <div class="grid-5 debug">.grid-5</div>
+        <div class="grid-5 debug">.grid-5</div>
+        <div class="grid-5 debug">.grid-5</div>
+        <div class="grid-5 debug">.grid-5</div>
+        <div class="grid-5 debug">.grid-5</div>
     </div>
 </section>
 
@@ -181,7 +247,76 @@
         <div class="grid-4 debug">.grid-4</div>
         <div class="grid-2 debug">.grid-2</div>
         <div class="grid-4 debug">.grid-4</div>
+        <div class="grid-5 debug">.grid-5</div>
+        <div class="grid-5 debug">.grid-5</div>
+        <div class="grid-5 debug">.grid-5</div>
+        <div class="grid-3 debug">.grid-3</div>
     </div>
+</section>
+
+<section class="container mt1">
+    <h2>Alignments</h2>
+</section>
+
+<section class="container" tabindex="0">
+    <div class="grid grid-center">
+        <div class="grid-4 debug">.grid-center > .grid-4</div>
+    </div>
+    <div class="grid grid-center_y" style="height:300px;background-color:#f2f2f2;">
+        <div class="grid-5 debug">.grid-center_y > .grid-5</div>
+    </div>
+</section>
+
+<section class="container mt2">
+  <h2>Multi-Purpose Grid <small>Percentage Based. Gutters. Floated</small></h2>
+</section>
+
+<section class="container">
+    <section class="mp-grid">
+      <div class="mp-2 debug">.mp-2</div>
+      <div class="mp-2 debug">.mp-2</div>
+      <div class="mp-2 debug">.mp-2</div>
+      <div class="mp-2 debug">.mp-2</div>
+      <div class="mp-2 debug">.mp-2</div>
+      <div class="mp-2 debug">.mp-2</div>
+      <div class="mp-2 debug">.mp-2</div>
+      <div class="mp-2 debug">.mp-2</div>
+      <div class="mp-2 debug">.mp-2</div>
+    </section>
+
+    <section class="mp-grid">
+      <div class="mp-3 debug">.mp-3</div>
+      <div class="mp-3 debug">.mp-3</div>
+      <div class="mp-3 debug">.mp-3</div>
+      <div class="mp-3 debug">.mp-3</div>
+      <div class="mp-3 debug">.mp-3</div>
+      <div class="mp-3 debug">.mp-3</div>
+      <div class="mp-3 debug">.mp-3</div>
+      <div class="mp-3 debug">.mp-3</div>
+    </section>
+
+    <section class="mp-grid">
+      <div class="mp-4 debug">.mp-4</div>
+      <div class="mp-4 debug">.mp-4</div>
+      <div class="mp-4 debug">.mp-4</div>
+      <div class="mp-4 debug">.mp-4</div>
+      <div class="mp-4 debug">.mp-4</div>
+      <div class="mp-4 debug">.mp-4</div>
+      <div class="mp-4 debug">.mp-4</div>
+      <div class="mp-4 debug">.mp-4</div>
+      <div class="mp-4 debug">.mp-4</div>
+    </section>
+
+    <section class="mp-grid">
+      <div class="mp-5 debug">.mp-5</div>
+      <div class="mp-5 debug">.mp-5</div>
+      <div class="mp-5 debug">.mp-5</div>
+      <div class="mp-5 debug">.mp-5</div>
+      <div class="mp-5 debug">.mp-5</div>
+      <div class="mp-5 debug">.mp-5</div>
+      <div class="mp-5 debug">.mp-5</div>
+    </section>
+
 </section>
 
 <section class="container mt1">
@@ -191,18 +326,18 @@
 <section class="container" tabindex="0">
     <div class="cards">
         <figure class="card-2">
-            <img src="http://placehold.it/650x230" alt="">
+            <img src="//placehold.it/500x230" alt="">
             <figcaption>
-                <strong>Title One</strong>
-                You know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero.
+                <strong>MODX CLOUD</strong>
+                A web development and Cloud hosting platform like no other.
             </figcaption>
 
         </figure>
         <figure class="card-2">
-            <img src="http://placehold.it/500x230" alt="">
+            <img src="//placehold.it/500x230" alt="">
             <figcaption>
-                <strong>Title Two Here</strong>
-                Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is.
+                <strong>MODX CMS</strong>
+                The content management system that makes awesome easy.
             </figcaption>
         </figure>
 
@@ -211,25 +346,25 @@
 
 <section class="container" tabindex="0">
     <div class="cards">
-        <figure class="card-3">
-            <img src="http://placehold.it/350x200" alt="">
+        <figure class="card-3 fill-card">
+            <img src="//placehold.it/500x230" alt="">
             <figcaption>
-                <strong>Title One</strong>
-                You know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero.
+                <strong>.fill-card</strong>
+                A web development and Cloud hosting platform like no other.
             </figcaption>
         </figure>
         <figure class="card-3">
-            <img src="http://placehold.it/500x230" alt="">
+            <img src="//placehold.it/500x230" alt="">
             <figcaption>
-                <strong>Title Two Here</strong>
-                Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is.
+                <strong>MODX CMS</strong>
+                The content management system that makes awesome easy.
             </figcaption>
         </figure>
         <figure class="card-3">
-            <img src="http://placehold.it/350x200" alt="">
+            <img src="//placehold.it/500x230" alt="">
             <figcaption>
-                <strong>Title Three</strong>
-                Now that we know who you are, I know who I am.
+                <strong>MODX SERVICES</strong>
+                We built MODX and know it inside and out. Let us assist you.
             </figcaption>
         </figure>
     </div>
@@ -238,34 +373,133 @@
 <section class="container" tabindex="0">
     <div class="cards">
         <figure class="card-4">
-            <img src="http://placehold.it/350x200" alt="">
+            <img src="img/rogue-one-421x236.jpg" alt="">
             <figcaption>
-                <strong>Title One</strong>
-                You know how you can tell who the arch-villain's going to be?
+                <strong>ONE IMAGE</strong>
+                This image is 421x236 and allowed to flex
             </figcaption>
         </figure>
         <figure class="card-4">
-            <img src="http://placehold.it/400x230" alt="">
+            <picture>
+                <source srcset="//placehold.it/400x230" media="(min-width:768px)">
+                <source srcset="//placehold.it/768x250" media="(min-width:0)">
+                <img srcset="//placehold.it/768x150" src="//placehold.it/768x150" alt="Placeholder with grey background and dimension watermark without any imagery">
+            </picture>
             <figcaption>
-                <strong>Title Two Here</strong>
-                Find out where my goddamn money is.
+                <strong>USING SRCSET</strong>
+                Built-in &lt;picture&gt; support
             </figcaption>
         </figure>
         <figure class="card-4">
-            <img src="http://placehold.it/350x200" alt="">
+            <img src="//placehold.it/400x230" alt="">
             <figcaption>
-                <strong>Title Three</strong>
-                Now that we know who you are, I know who I am.
+                <strong>MODX REVOLUTION</strong>
+                Stand out from the crowd with MODX Revolution.
             </figcaption>
         </figure>
-        <figure class="card-4">
-            <img src="http://placehold.it/400x230" alt="">
+        <figure class="card-4 fill-card">
+            <img src="img/rogue-one-421x236.jpg" alt="">
             <figcaption>
-                <strong>Title Two Here</strong>
-                Find out where my goddamn money is.
+                <strong>.fill-card</strong>
+                Class to fill the card with the image.
             </figcaption>
         </figure>
     </div>
+</section>
+
+<section class="container mt1">
+    <h2>Tiles</h2>
+</section>
+
+<section class="container" tabindex="0">
+    <div class="tiles">
+        <figure class="tile-4">
+            <img src="//placehold.it/420x230" alt="">
+            <figcaption>
+                <strong>MODX REVOLUTION</strong>
+            </figcaption>
+        </figure>
+        <figure class="tile-4">
+            <img src="//placehold.it/420x230" alt="">
+            <figcaption>
+                <strong>MODX REVOLUTION</strong><br>
+                <em>Subtitle</em>
+            </figcaption>
+        </figure>
+        <figure class="tile-4">
+            <img src="//placehold.it/420x230" alt="">
+            <figcaption>
+                <strong>MODX REVOLUTION</strong>
+            </figcaption>
+        </figure>
+        <figure class="tile-4">
+            <img src="//placehold.it/420x230" alt="">
+            <figcaption>
+                <strong>MODX REVOLUTION</strong>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="tiles">
+        <figure class="tile-3 fill-tile">
+            <img src="//placehold.it/420x230" alt="">
+            <figcaption>
+                <strong>.fill-tile</strong>
+            </figcaption>
+        </figure>
+        <figure class="tile-3 fill-tile">
+            <img src="//placehold.it/420x230" alt="">
+            <figcaption>
+                <strong>.fill-tile</strong><br>
+                <em>Subtitle</em>
+            </figcaption>
+        </figure>
+        <figure class="tile-3 fill-tile">
+            <img src="//placehold.it/420x230" alt="">
+            <figcaption>
+                <strong>.fill-tile</strong>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="tiles">
+        <figure class="tile-5 fill-tile">
+            <img src="//placehold.it/420x230" alt="">
+            <figcaption>
+                <strong>.fill-tile</strong><br>
+                <em>Subtitle</em>
+            </figcaption>
+        </figure>
+        <figure class="tile-5 fill-tile">
+            <picture>
+                <source srcset="//placehold.it/420x230" media="(min-width:480px)">
+                <source srcset="//placehold.it/480x200" media="(min-width:0)">
+                <img srcset="//placehold.it/480x200" src="//placehold.it/480x200" alt="Placeholder with grey background and dimension watermark without any imagery">
+            </picture>
+            <figcaption>
+                <strong>SRCSET</strong>
+            </figcaption>
+        </figure>
+        <figure class="tile-5 fill-tile">
+            <img src="//placehold.it/420x230" alt="">
+            <figcaption>
+                <strong>.fill-tile</strong>
+            </figcaption>
+        </figure>
+        <figure class="tile-5 fill-tile">
+            <img src="//placehold.it/420x230" alt="">
+            <figcaption>
+                <strong>.fill-tile</strong>
+            </figcaption>
+        </figure>
+        <figure class="tile-5 fill-tile">
+            <img src="//placehold.it/420x230" alt="">
+            <figcaption>
+                <strong>.fill-tile</strong>
+            </figcaption>
+        </figure>
+    </div>
+
 </section>
 
 <section class="container mt1">
@@ -275,18 +509,18 @@
 <section class="container" tabindex="0">
     <div class="thumbs">
         <figure class="thumb-2">
-            <img src="http://placehold.it/100x80" alt="">
+            <img src="//placehold.it/100x80" alt="">
             <figcaption>
-                <strong>Title One</strong>
-                You know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero.
+                <strong>MODX CLOUD</strong>
+                A web development and Cloud hosting platform like no other.
             </figcaption>
 
         </figure>
         <figure class="thumb-2">
-            <img src="http://placehold.it/100x80" alt="">
+            <img src="//placehold.it/100x80" alt="">
             <figcaption>
-                <strong>Title Two Here</strong>
-                Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is.
+                <strong>MODX SERVICES</strong>
+                We built MODX and know it inside and out. Let us assist you.
             </figcaption>
         </figure>
 
@@ -296,25 +530,25 @@
 <section class="container" tabindex="0">
     <div class="thumbs">
         <figure class="thumb-3">
-            <img src="http://placehold.it/100x100" alt="">
+            <img src="img/test-pic1.png" alt="" width="100" height="130">
             <figcaption>
-                <strong>Title One</strong>
-                You know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero.
+                <strong>FIXED IMAGE</strong>
+                This image is 100x130 with hard coded sizes and not allowed to flex.
             </figcaption>
 
         </figure>
         <figure class="thumb-3">
-            <img src="http://placehold.it/100x100" alt="">
+            <img src="//placehold.it/100x130" alt="">
             <figcaption>
-                <strong>Title Two Here</strong>
-                Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is.
+                <strong>MODX CMS</strong>
+                The content management system that makes awesome easy. The content management system that makes awesome easy.
             </figcaption>
         </figure>
         <figure class="thumb-3">
-            <img src="http://placehold.it/100x100" alt="">
+            <img src="//placehold.it/100x130" alt="">
             <figcaption>
-                <strong>Title One</strong>
-                You know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero.
+                <strong>MODX CLOUD</strong>
+                Move beyond the blog. Scale like never before. Realize creative freedom. Welcome to MODX.
             </figcaption>
 
         </figure>
@@ -379,7 +613,7 @@
         <div class="col-6">
             <div class="thumbs">
                 <figure class="thumb">
-                    <img src="http://placehold.it/100x80" alt="">
+                    <img src="//placehold.it/100x80" alt="">
                     <figcaption>
                         <strong>Nested Thumb</strong>
                         Here we have 2 .col-6 DIVs.
@@ -387,7 +621,7 @@
                 </figure>
 
                 <figure class="thumb">
-                    <img src="http://placehold.it/100x80" alt="">
+                    <img src="//placehold.it/100x80" alt="">
                     <figcaption>
                         <strong>Nested Thumb</strong>
                         Here we have 2 .col-6 DIVs with a .thumb and a .card component.
@@ -397,14 +631,31 @@
         </div>
         <div class="col-6">
             <div class="cards">
-                <figure class="card">
-                    <img src="http://placehold.it/350x200" alt="">
+                <figure class="card-1">
+                    <img src="//placehold.it/500x200" alt="">
                     <figcaption>
                         <strong>Title One</strong>
-                        You know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero.
+                        Telling your story in your visitors’ language improves engagement. For many, managing multi-language websites is clunky or tedious. Not MODX.
                     </figcaption>
                 </figure>
             </div>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="col-6">
+            <div class="cards">
+                <figure class="card-1">
+                    <img src="//placehold.it/500x200" alt="">
+                    <figcaption>
+                        <strong>Title One</strong>
+                        Telling your story in your visitors’ language improves engagement. For many, managing multi-language websites is clunky or tedious. Not MODX.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="col-6 debug center">
+            <p>Centered Content</p>
+            <img src="//placehold.it/250x250" alt="">
         </div>
     </div>
 </section>
@@ -414,7 +665,7 @@
         <div class="grid-2">
             <div class="thumbs">
                 <figure class="thumb">
-                    <img src="http://placehold.it/100x80" alt="">
+                    <img src="//placehold.it/100x80" alt="">
                     <figcaption>
                         <strong>Nested Thumb</strong>
                         Here we have 2 .grid-2 DIVs.
@@ -422,7 +673,7 @@
                 </figure>
 
                 <figure class="thumb">
-                    <img src="http://placehold.it/100x80" alt="">
+                    <img src="//placehold.it/100x80" alt="">
                     <figcaption>
                         <strong>Nested Thumb</strong>
                         With a .thumb and a .card-2 component.
@@ -433,15 +684,19 @@
         <div class="grid-2">
             <div class="cards">
                 <figure class="card-2">
-                    <img src="http://placehold.it/350x200" alt="">
+                    <img src="//placehold.it/350x200" alt="">
                     <figcaption>
                         <strong>Title One</strong>
                     </figcaption>
                 </figure>
                 <figure class="card-2">
-                    <img src="http://placehold.it/350x200" alt="">
+                    <picture>
+                        <source srcset="//placehold.it/350x200" media="(min-width:768px)">
+                        <source srcset="//placehold.it/768x250" media="(min-width:0)">
+                        <img srcset="//placehold.it/768x150" src="//placehold.it/768x150" alt="Placeholder with grey background and dimension watermark without any imagery">
+                    </picture>
                     <figcaption>
-                        <strong>Title Two</strong>
+                        <strong>USING SRCSET</strong>
                     </figcaption>
                 </figure>
             </div>
@@ -558,6 +813,10 @@
                       <option value="2">Option 2</option>
                       <option value="3">Option 3</option>
                   </select>
+            </div>
+            <div class="input-wrapper">
+                <label for="file">File:</label>
+                <input type="file" id="file" name="file">
             </div>
             <div class="input-wrapper">
                 <label for="comments">Textarea</label>
@@ -718,7 +977,7 @@
     <h2 class="mt2">Tabs</h2>
 </section>
 
-<section class="container">
+<section class="container brash_tab">
     <div role="tablist" class="tablist">
         <button role="tab" id="tab-btn-1" aria-selected="true" aria-controls="tab1">Product</button>
         <button role="tab" id="tab-btn-2" aria-selected="false" aria-controls="tab2">Platform</button>
@@ -741,7 +1000,7 @@
         <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
     </section>
 
-    <div class="mt1"><a href="components/tabs.html" class="btn-secondary-small">View Tab Component with JS</a></div>
+    <div class="mt1"><a href="components/tabs.html" class="btn-secondary-small">View Tab Component</a></div>
 
 </section>
 
@@ -750,40 +1009,40 @@
 </section>
 
 <section class="container">
-    <section class="tab-slider" style="height:400px;">
+    <section class="tab-slider brash_tabslider" data-height="400px">
         <div role="tablist" class="tablist-slider">
-            <button role="tab" id="tab-btn-1" aria-selected="true" aria-controls="tab1">Product</button>
-            <button role="tab" id="tab-btn-2" aria-selected="false" aria-controls="tab2">Platform</button>
-            <button role="tab" id="tab-btn-3" aria-selected="false" aria-controls="tab3">CMS</button>
+            <button role="tab" id="tabslider-btn-1" aria-selected="true" aria-controls="tabslider1">Product</button>
+            <button role="tab" id="tabslider-btn-2" aria-selected="false" aria-controls="tabslider2">Platform</button>
+            <button role="tab" id="tabslider-btn-3" aria-selected="false" aria-controls="tabslider3">CMS</button>
         </div>
 
-        <section style="height:400px;" role="tabpanel" class="tabpanel-slider" id="tab1" aria-labelledby="tab-btn-1" tabindex="0" aria-hidden="false">
+        <section role="tabpanel" class="tabpanel-slider" id="tabslider1" aria-labelledby="tabslider-btn-1" tabindex="0" aria-hidden="false">
             <div class="gutter">
                 <h2>Product</h2>
                 <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
                 <p><a href="" class="btn">Read More</a></p>
-                <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/volcano.jpeg" role="presentation">
+                <img src="img/volcano.jpeg" role="presentation">
             </div>
         </section>
-        <section role="tabpanel" class="tabpanel-slider" id="tab2" aria-labelledby="tab-btn-2" tabindex="0" aria-hidden="true">
+        <section role="tabpanel" class="tabpanel-slider" id="tabslider2" aria-labelledby="tabslider-btn-2" tabindex="0" aria-hidden="true">
             <div class="gutter">
                 <h2>Platform</h2>
                 <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
                 <p><a href="" class="btn">Buy Now</a></p>
-                <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/clouds.jpeg" role="presentation">
+                <img src="img/clouds.jpeg" role="presentation">
             </div>
         </section>
-        <section role="tabpanel" class="tabpanel-slider" id="tab3" aria-labelledby="tab-btn-3" tabindex="0" aria-hidden="true">
+        <section role="tabpanel" class="tabpanel-slider" id="tabslider3" aria-labelledby="tabslider-btn-3" tabindex="0" aria-hidden="true">
             <div class="gutter">
                 <h2>CMS</h2>
                 <p>Enterprise development from MODX, awesome vetted professionals, and the greatest Community in Open Source.</p>
                 <p><a href="" class="btn">Continue</a></p>
-                <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/mountain-range.jpeg" role="presentation">
+                <img src="img/mountain-range.jpeg" role="presentation">
             </div>
         </section>
     </section>
 
-    <div class="mt1"><a href="components/slider.html" class="btn-secondary-small">View Tab Slider Component with JS</a></div>
+    <div class="mt1"><a href="components/slider.html" class="btn-secondary-small">View Tab Slider Component</a></div>
 
 </section>
 
@@ -817,14 +1076,19 @@
         </dd>
     </dl>
 
-    <div class="mt1"><a href="components/accordion.html" class="btn-secondary-small">View Accordion Component with JS</a></div>
+    <div class="mt1"><a href="components/accordion.html" class="btn-secondary-small">View Accordion Component</a></div>
 
 </section>
+
 
 <footer role="contentinfo" class="mt2">
     <section class="container" tabindex="0">
         <p>Here is some copyright space.</p>
     </section>
 </footer>
+
+<script src="//code.jquery.com/jquery-3.0.0.min.js"></script>
+<script src="js/brash-ui.min.js"></script>
+
 </body>
 </html>

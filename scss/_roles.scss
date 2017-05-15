@@ -14,7 +14,7 @@
     #logo{
         padding: $baseGutter 0;
         flex-basis: 50%;
-        svg{fill: $black;height:40px;}
+        svg{fill: $black;height:39px;}
         label{vertical-align:middle;}
 
         @include respond-to($oldmobile){
@@ -56,18 +56,11 @@
 }
 
 [role=complementary]{
-    
+
     @include headings {color:$secondary;}
 
     p{
         margin-bottom: $baseGutter;
-    }
-
-    ul{
-
-        li{
-            padding: 0 0 $baseGutter 0;
-        }
     }
 
 }

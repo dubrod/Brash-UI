@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var sassdoc = require('sassdoc');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
@@ -20,6 +21,7 @@ gulp.task('scripts', function() {
 
 gulp.task('sass', function () {
   return gulp.src(paths.styles)
+    .pipe(sassdoc())
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(sourcemaps.write('/maps'))

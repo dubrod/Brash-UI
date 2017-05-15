@@ -1,0 +1,142 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Brash - v0.9.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Brash - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="<p>Open Source Brash UI</p>
+"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title"><a href="http://gulpjs.com">Brash - v0.9.0</a></h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="a11y"><a href="#a11y">a11y</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="a11y-css"><a href="#a11y-css">csss</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="a11y" data-name=".sr-only" data-type="css"><a href="#a11y-css-.sr-only">.sr-only</a></li><li class="sidebar__item sassdoc__item" data-group="a11y" data-name="body *:focus,body *:active" data-type="css"><a href="#a11y-css-body *:focus,body *:active">body *:focus,body *:active</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="body"><a href="#body">body</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="body-css"><a href="#body-css">csss</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="body" data-name="body" data-type="css"><a href="#body-css-body">body</a></li><li class="sidebar__item sassdoc__item" data-group="body" data-name=":root" data-type="css"><a href="#body-css-:root">:root</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="grid"><a href="#grid">grid</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="grid-mixin"><a href="#grid-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="grid" data-name="grid1" data-type="mixin"><a href="#grid-mixin-grid1">grid1</a></li><li class="sidebar__item sassdoc__item" data-group="grid" data-name="grid2" data-type="mixin"><a href="#grid-mixin-grid2">grid2</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="grid-css"><a href="#grid-css">csss</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="grid" data-name=".grid" data-type="css"><a href="#grid-css-.grid">.grid</a></li><li class="sidebar__item sassdoc__item" data-group="grid" data-name=".mp-grid" data-type="css"><a href="#grid-css-.mp-grid">.mp-grid</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="a11y"><div class="container">a11y</div></h1><section class="main__sub-section" id="a11y-css"><h2 class="main__heading--secondary"><div class="container">csss</div></h2><section class="main__item container item" id="a11y-css-.sr-only"><h3 class="item__heading"><a class="item__name" href="#css-.sr-only">.sr-only</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.sr-only {
+  position: absolute !important;height: 1px; width: 1px;border: 0; padding: 0;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);
+}</code>" data-collapsed=".sr-only { ... }"><code>.sr-only { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>These items will be read but not visible, even on focus</p></div></section><section class="main__item container item" id="a11y-css-body *:focus,body *:active"><h3 class="item__heading"><a class="item__name" href="#css-body *:focus,body *:active">body *:focus,body *:active</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>body *:focus,body *:active {
+  outline: 1px solid lighten($primary,5%);
+}</code>" data-collapsed="body *:focus,body *:active { ... }"><code>body *:focus,body *:active { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Give focused elements an outline for users with contrast disability</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="body"><div class="container">body</div></h1><section class="main__sub-section" id="body-css"><h2 class="main__heading--secondary"><div class="container">csss</div></h2><section class="main__item container item" id="body-css-body"><h3 class="item__heading"><a class="item__name" href="#css-body">body</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>body {
+  font-family: $bodyFont;
+    font-size: .9rem;
+    background-color: $white;
+    color: $black;
+}</code>" data-collapsed="body { ... }"><code>body { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Base</p></div></section><section class="main__item container item" id="body-css-:root"><h3 class="item__heading"><a class="item__name" href="#css-:root">:root</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>:root {
+  box-sizing: $root-box-sizing;
+	cursor: $root-cursor;
+	font: #{$root-font-size}/#{$root-line-height} $root-font-family;
+	text-rendering: $root-text-rendering;
+}</code>" data-collapsed=":root { ... }"><code>:root { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Root</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="grid"><div class="container">grid</div></h1><section class="main__sub-section" id="grid-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="grid-mixin-grid1"><h3 class="item__heading"><a class="item__name" href="#mixin-grid1">grid1</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin grid1() { 
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: $gridGutter;
+ }" data-collapsed="@mixin grid1() { ... }"><code>@mixin grid1() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>100%</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p></section><section class="main__item container item" id="grid-mixin-grid2"><h3 class="item__heading"><a class="item__name" href="#mixin-grid2">grid2</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin grid2() { 
+    flex: 0 0 calc(50.5% - #{$gridGutter});
+    margin-bottom: $gridGutter;
+ }" data-collapsed="@mixin grid2() { ... }"><code>@mixin grid2() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>50.5%</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p></section></section><section class="main__sub-section" id="grid-css"><h2 class="main__heading--secondary"><div class="container">csss</div></h2><section class="main__item container item" id="grid-css-.grid"><h3 class="item__heading"><a class="item__name" href="#css-.grid">.grid</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.grid {
+  //IE hack
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: row;
+
+    //properties
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $gridGutter 0 0 0;
+
+    .grid-1{
+        @include grid1;
+    }
+
+    .grid-2{
+        @include grid2;
+    }
+
+    .grid-3{
+        @include grid3;
+    }
+
+    .grid-4{
+        @include grid4;
+    }
+
+    .grid-5{
+        @include grid5;
+    }
+
+    //reset all the grid classes b/c .grid is a layout utility not a specific element like a card or tile
+    .grid-2,.grid-3,.grid-4,.grid-5{
+        @include gridReset;
+    }
+
+    //alignments
+    &amp;.grid-center{
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content:center;
+    }
+
+    &amp;.grid-center_y{
+        align-items:center;
+    }
+}</code>" data-collapsed=".grid { ... }"><code>.grid { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>.grid requires &quot;justify-content: space-between;&quot; b/c of flex: 0 0 calc</p></div></section><section class="main__item container item" id="grid-css-.mp-grid"><h3 class="item__heading"><a class="item__name" href="#css-.mp-grid">.mp-grid</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.mp-grid {
+  @extend .clearfix;
+
+	.mp-2{
+		width: 48.8%;
+		float: left;
+		margin-left: $mpGutter;
+		margin-right: $mpGutter;
+		margin-bottom: $mpGutter;
+
+		&amp;:nth-child(2n+1){margin-left: 0;clear:left;}
+		&amp;:nth-child(2n+0){margin-right: 0;}
+
+		@include respond-to($mobile){
+			width: 100%;
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+
+	.mp-3{
+		width: 31.719%;
+		float: left;
+		margin-left: $mpGutter;
+		margin-right: $mpGutter;
+		margin-bottom: $mpGutter;
+
+		&amp;:nth-child(3n+1){margin-left: 0;clear:left;}
+		&amp;:nth-child(3n+0){margin-right: 0;}
+
+		@include respond-to($mobile){
+			width: 100%;
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+
+	.mp-4{
+		width: 23.2%;
+		float: left;
+		margin-left: $mpGutter;
+		margin-right: $mpGutter;
+		margin-bottom: $mpGutter;
+
+		&amp;:nth-child(4n+1){margin-left: 0;clear:left;}
+		&amp;:nth-child(4n+0){margin-right: 0;}
+
+		@include respond-to($mobile){
+			width: 100%;
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+
+	.mp-5{
+		width: 18.069%;
+		float: left;
+		margin-left: $mpGutter;
+		margin-right: $mpGutter;
+		margin-bottom: $mpGutter;
+
+		&amp;:nth-child(5n+1){margin-left: 0;clear:left;}
+		&amp;:nth-child(5n+0){margin-right: 0;}
+
+		@include respond-to($mobile){
+			width: 100%;
+			margin-right: 0;
+			margin-left: 0;
+		}
+
+	}
+}</code>" data-collapsed=".mp-grid { ... }"><code>.mp-grid { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Multi-Purpose Grid (floats)</p></div></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <a class="project-info__name" href="http://gulpjs.com">Brash</a><!-- Version --> <span class="project-info__version">- v0.9.0</span><!-- License --> <span class="project-info__license">, under MIT</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

@@ -6,7 +6,6 @@
 
 ### Common Questions
 
- - Where's the Java?. Each Component has it's own page with JS included.
  - What's with the Outline? It's for debugging/building box sizing and a11y focus.
  - What is this mockup text? It's from [modx.com](http://www.modx.com) - the BEST CMS in the world.
 
@@ -23,7 +22,6 @@
 ### Spacing
 
  - `VARS` has 1 Gutter variable to keep EVERYTHING EQUAL
- - Not a single `float:`
 
 ---
 
@@ -38,7 +36,7 @@
 
 ### Browser Support
 
-> Native support. You're welcome to add your favorite Polyfill.
+> Native support ONLY. You're welcome to add your favorite Polyfill.
 
 
  - Windows 10

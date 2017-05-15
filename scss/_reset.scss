@@ -13,7 +13,7 @@ $root-box-sizing: border-box !default;
 $root-cursor: default !default;
 $root-font-family: sans-serif !default;
 $root-font-size: 16px !default;
-$root-line-height: 1.5em !default;
+$root-line-height: 1.6em !default;
 $root-text-rendering: optimizeLegibility !default;
 
 $anchor-text-decoration: underline !default;
@@ -136,7 +136,8 @@ textarea {
 }
 
 // specify the root styles of the document
-
+/// Root
+/// @group Body
 :root {
 	box-sizing: $root-box-sizing;
 	cursor: $root-cursor;
