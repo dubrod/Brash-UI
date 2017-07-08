@@ -9,7 +9,7 @@
 <meta name="keywords" content="[[*keywords]]">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<link href="http://fonts.googleapis.com/css?family=Roboto|Open+Sans:400,400italic,600" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Roboto|Open+Sans:400,400italic,600" rel="stylesheet">
 <link rel="stylesheet" href="../css/brash.css" />
 
 </head>
@@ -22,38 +22,36 @@
     <h2>Tab Panel - Slider Edition</h2>
 </section>
 
-<section class="container tab-slider">
-    <div role="tablist" class="tablist-slider">
-        <button role="tab" id="tab-btn-1" aria-selected="true" aria-controls="tab1">Product</button>
-        <button role="tab" id="tab-btn-2" aria-selected="false" aria-controls="tab2">Platform</button>
-        <button role="tab" id="tab-btn-3" aria-selected="false" aria-controls="tab3">CMS</button>
+<section class="container">
+    <div class="grid">
+        <div class="grid-2 tab-slider no-screen brash_tabslider" data-height="300px">
+            <div role="tablist" class="tablist-slider">
+                <button role="tab" id="tab-btn-4" aria-selected="true" aria-controls="tab4">Han Solo</button>
+                <button role="tab" id="tab-btn-5" aria-selected="false" aria-controls="tab5">Leia</button>
+                <button role="tab" id="tab-btn-6" aria-selected="false" aria-controls="tab6">Poe</button>
+            </div>
+
+            <section role="tabpanel" class="tabpanel-slider" id="tab4" aria-labelledby="tab-btn-4" tabindex="0" aria-hidden="false">
+                <div class="gutter">
+                    <p class="sr-only">A Courageous space pirate</p>
+                    <img src="../img/test-pic1.png" role="presentation">
+                </div>
+            </section>
+            <section role="tabpanel" class="tabpanel-slider" id="tab5" aria-labelledby="tab-btn-5" tabindex="0" aria-hidden="true">
+                <div class="gutter">
+                    <p class="sr-only">The Rebellion Leader</p>
+                    <img src="../img/test-pic2.jpg" role="presentation">
+                </div>
+            </section>
+            <section role="tabpanel" class="tabpanel-slider" id="tab6" aria-labelledby="tab-btn-6" tabindex="0" aria-hidden="true">
+                <div class="gutter">
+                    <p class="sr-only">Ace Star Pilot</p>
+                    <img src="../img/test-pic5.png" role="presentation">
+                </div>
+            </section>
+
+        </div>
     </div>
-
-    <section role="tabpanel" class="tabpanel-slider" id="tab1" aria-labelledby="tab-btn-1" tabindex="0" aria-hidden="false">
-        <div class="gutter">
-            <h2>Product</h2>
-            <p>The world’s fastest, most customizable Open Source PHP CMS. Your creative vision, no restrictions, no compromise.</p>
-            <p><a href="" class="btn">Read More</a></p>
-            <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/volcano.jpeg" role="presentation">
-        </div>
-    </section>
-    <section role="tabpanel" class="tabpanel-slider" id="tab2" aria-labelledby="tab-btn-2" tabindex="0" aria-hidden="true">
-        <div class="gutter">
-            <h2>Platform</h2>
-            <p>Blazing fast, secure, maintained, and scalable cloud hosting platform with guaranteed uptime. Push button: get amazing.</p>
-            <p><a href="" class="btn">Buy Now</a></p>
-            <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/clouds.jpeg" role="presentation">
-        </div>
-    </section>
-    <section role="tabpanel" class="tabpanel-slider" id="tab3" aria-labelledby="tab-btn-3" tabindex="0" aria-hidden="true">
-        <div class="gutter">
-            <h2>CMS</h2>
-            <p>Enterprise development from MODX, awesome vetted professionals, and the greatest Community in Open Source.</p>
-            <p><a href="" class="btn">Continue</a></p>
-            <img src="https://dl.dropboxusercontent.com/u/4277345/codepen/img/mountain-range.jpeg" role="presentation">
-        </div>
-    </section>
-
 </section>
 
 <section class="container mt2" tabindex="0">
@@ -62,10 +60,6 @@
 
 <script src="//code.jquery.com/jquery-3.0.0.min.js"></script>
 <script src="../js/brash-ui.min.js"></script>
-<script>
-    $('.tab-slider').brashTabSlider({height:400});
-    $('[role=tab]').on("click keydown", function(e){ brashTab(this,e) });
-    $('[role=tabpanel]').on("keydown", function(e){ brashTabPanel(this,e) });
-</script>
+
 </body>
 </html>

@@ -9,7 +9,7 @@
 <meta name="keywords" content="[[*keywords]]">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<link href="http://fonts.googleapis.com/css?family=Roboto|Open+Sans:400,400italic,600" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Roboto|Open+Sans:400,400italic,600" rel="stylesheet">
 <link rel="stylesheet" href="../css/brash.css" />
 
 </head>
@@ -22,7 +22,16 @@
         <h2>Tabs</h2>
     </section>
 
-    <section class="container">
+    <section class="container mt1 mb1">
+        <p class="p1">
+            <strong>Rules:</strong><br>
+            - In each Section the class `brash_tab` must be present<br>
+            - Each `tablist button` must have a unique ID<br>
+            - Each `tabpanel` must have a unique ID<br>
+        </p>
+    </section>
+
+    <section class="container brash_tab">
         <div role="tablist" class="tablist">
             <button role="tab" id="tab-btn-1" aria-selected="true" aria-controls="tab1">Product</button>
             <button role="tab" id="tab-btn-2" aria-selected="false" aria-controls="tab2">Platform</button>
@@ -47,15 +56,27 @@
 
     </section>
 
+    <section class="container brash_tab">
+        <div role="tablist" class="tablist">
+            <button role="tab" id="tab-btn-4" aria-selected="true" aria-controls="tab4">First Amendment</button>
+            <button role="tab" id="tab-btn-5" aria-selected="false" aria-controls="tab5">Second Amendment</button>
+        </div>
+
+        <section role="tabpanel" class="tabpanel" id="tab4" aria-labelledby="tab-btn-4" tabindex="0" aria-hidden="false">
+            <p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
+        </section>
+        <section role="tabpanel" class="tabpanel" id="tab5" aria-labelledby="tab-btn-5" tabindex="0" aria-hidden="true">
+            <p>A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.</p>
+        </section>
+
+    </section>
+
     <section class="container mt2" tabindex="0">
         <p>Next section for tab testing.</p>
     </section>
 
 <script src="//code.jquery.com/jquery-3.0.0.min.js"></script>
 <script src="../js/brash-ui.min.js"></script>
-<script>
-    $('[role=tab]').on("click keydown", function(e){ brashTab(this,e) });
-    $('[role=tabpanel]').on("keydown", function(e){ brashTabPanel(this,e) });
-</script>
+
 </body>
 </html>

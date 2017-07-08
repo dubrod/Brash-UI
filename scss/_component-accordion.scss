@@ -32,6 +32,8 @@ dl.accordion{
     dd{
       margin:0;
       padding: $baseGutter/2;
+
+      svg{pointer-events: none;}
     }
 
 }
