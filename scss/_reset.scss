@@ -1,16 +1,8 @@
 // Reset
 
-body, button, input, select, textarea, pre, ul, ol { margin: 0; padding: 0; }
-h1, h2, h3, h4, h5, h6, p, dl, ol, ul, dt, dd {margin: 0;}
-ul,ol{list-style: none;}
-button, input, select, textarea { font-family: inherit; font-size: 100%; }
-article, aside, details, figcaption, figure, footer, header, main, nav, section, summary { display: block; }
-img{border:none; max-width:100%;}
-
 /*! sanitize.css | CC0 Public Domain | github.com/jonathantneal/sanitize.css */
 
 $root-box-sizing: border-box !default;
-$root-cursor: default !default;
 $root-font-family: sans-serif !default;
 $root-font-size: 16px !default;
 $root-line-height: 1.6em !default;
@@ -31,61 +23,19 @@ $textarea-resize: vertical !default;
 :root {
 	-ms-overflow-style: -ms-autohiding-scrollbar; // IE11+
 	overflow-y: scroll; // All browsers without overlaying scrollbars
+	box-sizing: $root-box-sizing;
+	font: #{$root-font-size}/#{$root-line-height} $root-font-family;
+	text-rendering: $root-text-rendering;
 	text-size-adjust: 100%; // iOS 8+
+	-webkit-font-smoothing:antialiased;
 }
 
-audio:not([controls]) {
-	display: none; // Chrome 40+, iOS 8+, Safari 8+
-}
-
-button {
-	overflow: visible; // Internet Explorer 11-
-	-webkit-appearance: button; // iOS 8+
-	cursor: pointer;
-}
-
-details {
-	display: block; // Edge 12+, Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+
-}
-
-input {
-	&[type="number"] {
-		width: auto; // Firefox 36+
-	}
-
-	&[type="search"] {
-		-webkit-appearance: textfield; // Safari 8+
-
-		&::-webkit-search-cancel-button,
-		&::-webkit-search-decoration {
-			-webkit-appearance: none; // Safari 8+
-		}
-	}
-}
-
-main {
-	display: block; // Android 4.3-, Internet Explorer 11+, Windows Phone 8.1+
-}
-
-summary {
-	display: block; // Firefox 36+, Internet Explorer 11+, Windows Phone 8.1+
-}
-
-pre {
-	overflow: auto; // Internet Explorer 11+
-}
-
-progress {
-	display: inline-block; // Internet Explorer 11+, Windows Phone 8.1+
-}
-
-template {
-	display: none; // Android 4.3-, Internet Explorer 11+, iOS 7-, Safari 7-, Windows Phone 8.1+
-}
-
-textarea {
-	overflow: auto; // Internet Explorer 11+
-}
+body, button, input, select, textarea, pre, ul, ol { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6, p, dl, ol, ul, dt, dd {margin: 0;}
+ul,ol{list-style: none;}
+button, input, select, textarea { font-family: inherit; font-size: 100%; }
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary { display: block; }
+img{border:none; max-width:100%;}
 
 [hidden] {
 	display: none; // Internet Explorer 10-
@@ -96,7 +46,6 @@ textarea {
 }
 
 
-
 /*
  * Universal inheritance
  */
@@ -104,26 +53,8 @@ textarea {
 *,
 ::before,
 ::after {
-	box-sizing: inherit;
-}
-
-::before,
-::after {
 	text-decoration: inherit;
 	vertical-align: inherit;
-}
-
-
-
-/*
- * Opinionated defaults
- */
-
-// specify solid border style of all elements
-
-*,
-::before,
-::after {
 	border-style: solid;
 	border-width: 0;
 }
@@ -133,16 +64,7 @@ textarea {
 * {
 	margin: 0;
 	padding: 0;
-}
-
-// specify the root styles of the document
-/// Root
-/// @group Body
-:root {
-	box-sizing: $root-box-sizing;
-	cursor: $root-cursor;
-	font: #{$root-font-size}/#{$root-line-height} $root-font-family;
-	text-rendering: $root-text-rendering;
+	box-sizing: inherit;
 }
 
 // specify the text decoration of anchors

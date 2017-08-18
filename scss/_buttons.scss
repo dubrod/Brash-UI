@@ -12,12 +12,20 @@
   display: inline-block;
   line-height: $baseGutter*1.6;
   height: auto;
-  padding: $baseGutter/2 $baseGutter;
+}
 
+$btn-padding: $baseGutter/2 $baseGutter;
+$btn-padding-small: .2rem $baseGutter;
+
+button{
+overflow: visible; // Internet Explorer 11-
+-webkit-appearance: button; // iOS 8+
+cursor: pointer;
 }
 
 .btn{
   @include btn();
+  padding: $btn-padding;
   color: $white;
   background-color: $primary;
   &:hover {
@@ -28,7 +36,7 @@
 
 .btn-small{
   @include btn();
-  padding: 0 $baseGutter !important;
+  padding: $btn-padding-small;
   color: $white;
   background-color: $primary;
   &:hover {
@@ -39,6 +47,7 @@
 
 .btn-secondary{
   @include btn();
+  padding: $btn-padding;
   color: $white;
   background-color: $secondary;
   &:hover {
@@ -49,7 +58,7 @@
 
 .btn-secondary-small{
   @include btn();
-  padding: 0 $baseGutter !important;
+  padding: $btn-padding-small;
   color: $white;
   background-color: $secondary;
   &:hover {
@@ -60,6 +69,7 @@
 
 .btn-gray{
   @include btn();
+  padding: $btn-padding;
   color: $black;
   background-color: $gray;
   &:hover {
@@ -70,7 +80,7 @@
 
 .btn-gray-small{
   @include btn();
-  padding: 0 $baseGutter !important;
+  padding: $btn-padding-small;
   color: $black;
   background-color: $gray;
   &:hover {

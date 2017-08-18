@@ -92,7 +92,7 @@ textarea {
   color: $black;
   border-style: solid;
   line-height: $baseGutter*1.5;
-
+  overflow: auto; // Internet Explorer 11+
 
   @include respond-to($mobile){
     width:100%;
